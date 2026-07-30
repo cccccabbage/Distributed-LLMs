@@ -185,6 +185,76 @@ needs broad changes throughout the model, and it cannot fix poor or unsuitable t
 The “Q” in QLoRA refers to quantization. QLoRA is commonly used to mean the training recipe of a
 quantized frozen base model plus trainable LoRA adapters, not a different replacement for LoRA's
 low-rank update.
+
+== Federated Learning
+
+Federated Learning (FL) trains a shared model while keeping each participant's raw data on its own
+client. Clients may be phones, hospitals, companies, or edge devices. A coordinating server sends a
+model to selected clients; each client trains locally and returns a model update; the server
+aggregates those updates into the next global model. The classic practical algorithm is Federated
+Averaging (FedAvg)@mcmahanCommunicationEfficientLearningDeep2023.
+
+FL provides data locality, not automatic privacy. Updates and metadata can still leak information,
+and malicious clients can try to poison training. Privacy and security mechanisms need to be chosen
+for the actual threat model.
+
+=== The FedAvg loop
+
+Let client $k$ hold $n_k$ examples, and let $n = sum_k n_k$. At round $t$, the server has model
+parameters $w_t$.
+
+1. The server selects available clients and broadcasts $w_t$.
+2. Each selected client runs local optimization for $E$ steps on its own data, producing
+  $w_(t+1)^k$.
+3. Clients send their parameters or parameter changes; raw training examples are not normally sent.
+4. The server forms a data-size-weighted average:
+
+$
+  w_(t+1) = sum_k (n_k / n) w_(t+1)^k
+$
+
+A client can instead send $Delta w_k = w_(t+1)^k - w_t$, which the server averages and adds to the
+current model. More local steps can reduce costly communication rounds, but they can also make
+client models drift apart when their data differs.
+
+=== The learning objective
+
+FL usually minimizes a weighted collection of client losses:
+
+$
+  min_w F(w) = sum_k (n_k / n) F_k(w)
+$
+
+$F_k(w)$ is client $k$'s local loss. Weighting by $n_k$ means clients with more examples have more
+influence. Equal-client weighting or fairness-weighted objectives are possible, but optimize a
+different target.
+
+=== Main challenges
+
+/ Non-IID data: Client datasets are not independent and identically distributed. For example,
+  hospitals can serve different populations and users can write in different languages or styles.
+  Their local optima differ, slowing or destabilizing simple averaging.
+/ System heterogeneity: Devices differ in compute, battery, connectivity, and dataset size. Dropouts
+  and slow clients (*stragglers*) can bias which data influences a round.
+/ Communication: Sending repeated large updates is expensive and is often the main bottleneck.
+/ Privacy and security: Update leakage, membership inference, data reconstruction, poisoning, and
+  backdoors remain concerns even when raw examples stay local.
+/ Evaluation: A good global average can hide poor performance on individual clients or minority
+  groups. Report global, per-client, and worst-group results when possible.
+
+=== Privacy and security distinctions
+
+/ Secure aggregation: A cryptographic protocol that lets the server obtain an aggregate without
+  observing every individual client update. It does not by itself stop leakage from the final model.
+/ Differential privacy (DP): Clipping and calibrated noise limit the influence of one record or
+  client under stated assumptions, yielding a formal privacy guarantee at a measurable utility cost.
+/ Robust aggregation: Clipping, anomaly detection, and robust aggregators can limit extreme or
+  malicious updates. Their value depends on the assumed attacker and is not universal protection.
+
+A complete FL design should say who is trusted, what is observable, whether clients may be
+malicious, and which risk is in scope: reconstruction, membership inference, poisoning, or
+backdoors.
+
 = Papers
 
 = References
