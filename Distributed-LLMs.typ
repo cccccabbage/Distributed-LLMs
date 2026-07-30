@@ -1,11 +1,16 @@
 #set document(title: "Distributed LLMs")
 #set page(margin: 2cm)
 
-= Distributed LLMs
+#align(center)[#text(size: 28pt, weight: "bold")[Distributed LLMs]]
 
-== Background Knowledge
+#outline(
+  title: [Contents],
+  depth: 2,
+)
 
-=== LoRA: Low-Rank Adaptation
+= Background Knowledge
+
+== LoRA: Low-Rank Adaptation
 
 LoRA@huLoRALowRankAdaptation2021 is a memory-efficient way to fine-tune a pretrained neural network,
 especially a large language model or image-generation model.
@@ -14,7 +19,7 @@ Instead of updating billions of existing model parameters, LoRA freezes the orig
 trains a comparatively small set of additional parameters called an adapter. This belongs to the
 broader family of parameter-efficient fine-tuning methods, or PEFT.
 
-==== How it works
+=== How it works
 
 Suppose a layer contains a large weight matrix $W$. Full fine-tuning learns a complete update:
 
@@ -48,7 +53,7 @@ That is about 128 times fewer trainable parameters for that matrix.
 A useful analogy is that full fine-tuning rewrites an entire textbook, while LoRA attaches a compact
 set of amendments telling the model how to behave differently.
 
-==== Why it is popular
+=== Why it is popular
 
 LoRA generally offers:
 
@@ -64,7 +69,7 @@ and roughly three times lower GPU-memory requirements than full fine-tuning for 
 achieving comparable or better results on the tested tasks. These are experimental results, not
 universal guarantees.
 
-==== Important settings
+=== Important settings
 
 / Rank, $r$: Determines adapter capacity. A larger rank can learn more complex changes but consumes
   more memory and storage.
@@ -77,7 +82,7 @@ universal guarantees.
 There is no universally best configuration. Small ranks such as $8$, $16$, or $32$ are common
 starting points, but the right value depends on the model, dataset, task, and targeted layers.
 
-==== Limitations
+=== Limitations
 
 LoRA does not make the base model small—you still need to load the base model unless it is
 separately quantized.
@@ -91,14 +96,14 @@ LoRA trained for one model version generally cannot simply be attached to a diff
 Finally, LoRA cannot compensate for poor training data. Small, repetitive, mislabeled, or
 low-quality datasets can make a model less reliable regardless of training efficiency.
 
-==== One terminology note
+=== One terminology note
 
 LoRA usually means Low-Rank Adaptation in machine learning.
 
 LoRa, with a lowercase “a,” commonly means Long Range, a low-power wireless radio technology used in
 IoT systems.
 
-=== QLoRA: Quantized LoRA
+== QLoRA: Quantized LoRA
 
 QLoRA@dettmersQLoRAEfficientFinetuning2023 combines LoRA with 4-bit quantization so that a much
 larger base model can fit in GPU memory during fine-tuning. It keeps the pretrained model frozen and
@@ -107,7 +112,7 @@ quantized, while training LoRA adapters in higher precision.
 QLoRA therefore changes *how the base model is stored during training*, rather than changing the
 low-rank-adapter idea introduced by LoRA.
 
-==== How it works
+=== How it works
 
 For each linear layer, QLoRA stores the frozen base weights in 4-bit form. During the forward and
 backward passes, the weights are temporarily dequantized to a computation datatype, commonly
@@ -130,7 +135,7 @@ quantization constants themselves. The paper also introduces paged optimizers, w
 memory to help absorb temporary optimizer-memory spikes rather than failing immediately with an
 out-of-memory error.
 
-==== Why it is popular
+=== Why it is popular
 
 QLoRA makes it practical to fine-tune models that would otherwise not fit on an available GPU. In
 the original paper, it enabled fine-tuning a 65-billion-parameter model on a single 48 GB GPU while
@@ -146,7 +151,7 @@ It is especially useful when:
 The output is still a LoRA adapter. The quantized base model and the adapter must both be available
 for inference unless the deployment system supports an appropriate merge or conversion workflow.
 
-==== Important settings
+=== Important settings
 
 / Quantization type: NF4 is the QLoRA paper's recommended 4-bit datatype for normally distributed
   pretrained weights. Other 4-bit schemes exist, but are not automatically equivalent.
@@ -159,7 +164,7 @@ for inference unless the deployment system supports an appropriate merge or conv
 / Batch size and sequence length: Activation memory still grows with these settings. Quantizing the
   base weights does not make all training memory costs disappear.
 
-==== Limitations
+=== Limitations
 
 QLoRA greatly reduces base-model memory, but it does not remove all hardware requirements.
 Activations, LoRA parameters, optimizer states, and temporary dequantized values still use memory;
@@ -172,13 +177,13 @@ need changes for another.
 Like LoRA, QLoRA freezes the base-model knowledge. It may not match full fine-tuning when a task
 needs broad changes throughout the model, and it cannot fix poor or unsuitable training data.
 
-==== One terminology note
+=== One terminology note
 
 The “Q” in QLoRA refers to quantization. QLoRA is commonly used to mean the training recipe of a
 quantized frozen base model plus trainable LoRA adapters, not a different replacement for LoRA's
 low-rank update.
-== Papers
+= Papers
 
-== References
+= References
 
 #bibliography("reference.bib", style: "ieee", title: none)
