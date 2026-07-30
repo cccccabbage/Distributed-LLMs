@@ -1,5 +1,8 @@
 #set document(title: "Distributed LLMs")
 #set page(margin: 2cm)
+#show heading.where(level: 1): set text(size: 22pt, weight: "bold")
+#show heading.where(level: 2): set text(size: 18pt, weight: "bold")
+#show heading.where(level: 3): set text(size: 14pt, weight: "bold")
 
 #align(center)[#text(size: 28pt, weight: "bold")[Distributed LLMs]]
 
