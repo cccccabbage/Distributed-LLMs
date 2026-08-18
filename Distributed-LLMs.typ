@@ -257,6 +257,8 @@ backdoors.
 
 = Papers
 
+#include "paper-notes/FedIT.typ"
+
 = References
 
 #bibliography("reference.bib", style: "ieee", title: none)
