@@ -2,7 +2,7 @@
 
 === Summary
 
-*FedIT*@zhangBuildingFederatedGPT2024 is a way to instruction-tune an LLM using instruction data
+*FedIT*@zhang_towards_2024 is a way to instruction-tune an LLM using instruction data
 distributed across many users or organizations *without collecting the raw instruction data in one
 central place*.
 

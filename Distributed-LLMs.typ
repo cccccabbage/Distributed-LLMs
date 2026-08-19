@@ -15,7 +15,7 @@
 
 == LoRA: Low-Rank Adaptation
 
-LoRA@huLoRALowRankAdaptation2021 is a memory-efficient way to fine-tune a pretrained neural network,
+LoRA@hu_lora_2021 is a memory-efficient way to fine-tune a pretrained neural network,
 especially a large language model or image-generation model.
 
 Instead of updating billions of existing model parameters, LoRA freezes the original model and
@@ -108,7 +108,7 @@ IoT systems.
 
 == QLoRA: Quantized LoRA
 
-QLoRA@dettmersQLoRAEfficientFinetuning2023 combines LoRA with 4-bit quantization so that a much
+QLoRA@dettmers_qlora_2023 combines LoRA with 4-bit quantization so that a much
 larger base model can fit in GPU memory during fine-tuning. It keeps the pretrained model frozen and
 quantized, while training LoRA adapters in higher precision.
 
@@ -192,7 +192,7 @@ Federated Learning (FL) trains a shared model while keeping each participant's r
 client. Clients may be phones, hospitals, companies, or edge devices. A coordinating server sends a
 model to selected clients; each client trains locally and returns a model update; the server
 aggregates those updates into the next global model. The classic practical algorithm is Federated
-Averaging (FedAvg)@mcmahanCommunicationEfficientLearningDeep2023.
+Averaging (FedAvg)@mcmahan_communication-efficient_2023.
 
 FL provides data locality, not automatic privacy. Updates and metadata can still leak information,
 and malicious clients can try to poison training. Privacy and security mechanisms need to be chosen
