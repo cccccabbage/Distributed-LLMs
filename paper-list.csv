@@ -1,7 +1,7 @@
 ﻿paper_name,link,publication time,learned
 DiLoCo: Distributed Low-Communication Training of Language Models,https://arxiv.org/abs/2311.08105,2023-11,Yes
 Efficient Deployment of Large Language Models on Resource-constrained Devices (FedSpine),https://arxiv.org/abs/2501.02438,2025-01,Yes
-Eager Updates for Overlapped Communication and Computation in DiLoCo,https://arxiv.org/abs/2502.12996,2025-02,No
+Eager Updates for Overlapped Communication and Computation in DiLoCo,https://arxiv.org/abs/2502.12996,2025-02,Yes
 Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow,https://www.pdl.cmu.edu/PDL-FTP/BigLearning/helix_abs.shtml,2025-03,No
 HLoRA: Efficient Federated Learning System for LLM Heterogeneous Fine-Tuning,https://arxiv.org/abs/2503.00813,2025-03,No
 HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment,https://arxiv.org/abs/2502.07903,2025-04,No

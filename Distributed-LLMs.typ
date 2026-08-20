@@ -30,6 +30,7 @@
 #include "papers/Dec-LoRA.typ"
 #include "papers/FedSpine.typ"
 #include "papers/DiLoCo.typ"
+#include "papers/Eager-Updates.typ"
 
 = References
 
