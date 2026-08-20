@@ -1,6 +1,6 @@
 ﻿paper_name,link,publication time,learned
-Decentralized Low-Rank Fine-Tuning of Large Language Models,https://arxiv.org/abs/2501.15361,2025-01,No
-Efficient Deployment of Large Language Models on Resource-constrained Devices (FedSpine),https://arxiv.org/abs/2501.02438,2025-01,No
+Decentralized Low-Rank Fine-Tuning of Large Language Models,https://arxiv.org/abs/2501.15361,2025-01,Yes
+Efficient Deployment of Large Language Models on Resource-constrained Devices (FedSpine),https://arxiv.org/abs/2501.02438,2025-01,Yes
 Exploring Potential Prompt Injection Attacks in Federated Military LLMs and Their Mitigation,https://arxiv.org/abs/2501.18416,2025-01,No
 Federated Fine-Tuning of LLMs: Framework Comparison and Research Directions,https://arxiv.org/abs/2501.04436,2025-01,No
 Federated Sketching LoRA: A Flexible Framework for Heterogeneous Collaborative LLM Fine-Tuning,https://arxiv.org/abs/2501.19389,2025-01,No

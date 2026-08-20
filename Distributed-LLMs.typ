@@ -27,6 +27,7 @@
 
 #include "papers/FedIT.typ"
 #include "papers/Dec-LoRA.typ"
+#include "papers/FedSpine.typ"
 
 = References
 
