@@ -4,9 +4,10 @@
 
 FedIT is a framework for instruction-tuning a large language model using instruction data
 distributed across users or organizations without centralizing the raw data @zhang_towards_2024. It
-combines @background-federated-learning with @background-lora: clients train lightweight adapters
-locally, and a server aggregates those adapters into a shared global adapter. Its contribution is a
-decentralized training framework rather than a new language-model architecture.
+combines @background-federated-learning[Federated Learning] with @background-lora[LoRA: Low-Rank
+  Adaptation]: clients train lightweight adapters locally, and a server aggregates those adapters
+into a shared global adapter. Its contribution is a decentralized training framework rather than a
+new language-model architecture.
 
 === Issues Addressed
 
@@ -19,10 +20,9 @@ optimizing all model parameters would be costly, so FedIT transmits and trains o
 reduces the training and communication burden, although clients must still exchange updates over
 multiple rounds.
 
-Client task, language, domain, and style differences create a second tension. Diversity can broaden
-the instruction distribution and contribute distinct capabilities, but conflicting local updates can
-make aggregation and convergence harder. FedIT treats this heterogeneity as both a potential
-resource and an optimization problem.
+FedIT treats client task, language, domain, and style differences as both a source of useful
+instruction diversity and an optimization difficulty; see @issue-data-heterogeneity[Data
+  Heterogeneity and Client Drift].
 
 Finally, keeping instruction data local does not make the framework formally private. Client updates
 may leak information, while malicious participants may submit poisoned updates. Additional privacy
@@ -75,8 +75,9 @@ themselves establish formal privacy or robust convergence.
 
 - Data locality does not prevent information leakage from client updates. Strong privacy requires
   additional mechanisms and a stated threat model.
-- The same heterogeneity that supplies diverse instruction data can make local updates conflict;
-  simple parameter averaging does not guarantee clean composition of distinct skills.
+- The framework does not resolve the client-drift and aggregation challenges described in
+  @issue-data-heterogeneity[Data Heterogeneity and Client Drift]; simple parameter averaging does
+  not guarantee clean composition of distinct skills.
 - LoRA reduces transmitted state, but clients still download, train, and upload across repeated
   rounds, so communication and device-resource constraints remain.
 - A malicious client can submit a poisoned adapter update. The framework does not itself provide a

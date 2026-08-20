@@ -1,8 +1,9 @@
 == QLoRA: Quantized LoRA <background-qlora>
 
-QLoRA combines @background-lora with 4-bit quantization so that a larger frozen base model can fit
-in GPU memory during fine-tuning @dettmers_qlora_2023. The base weights are stored in 4-bit form and
-temporarily dequantized for computation, while LoRA adapters remain trainable:
+QLoRA combines @background-lora[LoRA: Low-Rank Adaptation] with 4-bit quantization so that a larger
+frozen base model can fit in GPU memory during fine-tuning @dettmers_qlora_2023. The base weights
+are stored in 4-bit form and temporarily dequantized for computation, while LoRA adapters remain
+trainable:
 
 $
   W' = "dequantize"(W_("4-bit")) + (alpha / r) B A.

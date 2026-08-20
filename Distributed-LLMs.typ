@@ -4,6 +4,7 @@
 #show heading.where(level: 1): set text(size: 22pt, weight: "bold")
 #show heading.where(level: 2): set text(size: 18pt, weight: "bold")
 #show heading.where(level: 3): set text(size: 14pt, weight: "bold")
+#show ref: set text(fill: rgb("#0b5f8a"))
 
 #align(center)[#text(size: 28pt, weight: "bold")[Distributed LLMs]]
 
@@ -20,9 +21,12 @@
 
 = Common Issues
 
+#include "issues/data-heterogeneity.typ"
+
 = Papers
 
 #include "papers/FedIT.typ"
+#include "papers/Dec-LoRA.typ"
 
 = References
 
