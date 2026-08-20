@@ -22,12 +22,14 @@
 = Common Issues
 
 #include "issues/data-heterogeneity.typ"
+#include "issues/communication-cost.typ"
 
 = Papers
 
 #include "papers/FedIT.typ"
 #include "papers/Dec-LoRA.typ"
 #include "papers/FedSpine.typ"
+#include "papers/DiLoCo.typ"
 
 = References
 

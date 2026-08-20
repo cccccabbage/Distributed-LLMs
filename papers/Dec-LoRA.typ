@@ -19,9 +19,10 @@ Although @background-federated-learning[Federated Learning] keeps raw data local
 can be a bottleneck and a single point of coordination or failure. Dec-LoRA replaces that
 coordinator with direct, neighbor-to-neighbor communication.
 
-Fine-tuning every model parameter is costly to optimize, store, and exchange. Dec-LoRA instead
-communicates the low-rank factors of @background-lora[LoRA: Low-Rank Adaptation], reducing the state
-transferred per adapted layer from a dense update to roughly $O((d_1 + d_2) r)$ for rank $r$.
+The communication constraints summarized in @issue-communication-cost[Communication Cost and
+  Synchronization] motivate exchanging only the low-rank factors of @background-lora[LoRA: Low-Rank
+  Adaptation]. For rank $r$, this reduces the state transferred per adapted layer from a dense
+update to roughly $O((d_1 + d_2) r)$.
 
 The paper also addresses an optimization complication specific to LoRA. If client $i$ has factors
 $A_i$ and $B_i$, separately averaging them generally does not produce the average dense update:

@@ -15,10 +15,9 @@ Instruction tuning benefits from large, diverse, high-quality instruction-respon
 useful data may be sensitive, proprietary, or unavailable for centralized collection. FedIT keeps
 that data at its source while allowing it to contribute to a shared model.
 
-The framework also addresses the scale of conventional federated LLM training. Communicating and
-optimizing all model parameters would be costly, so FedIT transmits and trains only adapters. This
-reduces the training and communication burden, although clients must still exchange updates over
-multiple rounds.
+FedIT addresses the communication constraints summarized in @issue-communication-cost[Communication
+  Cost and Synchronization] by training and transmitting adapters rather than all model parameters.
+Clients still exchange those adapters over multiple rounds.
 
 FedIT treats client task, language, domain, and style differences as both a source of useful
 instruction diversity and an optimization difficulty; see @issue-data-heterogeneity[Data
@@ -79,7 +78,8 @@ themselves establish formal privacy or robust convergence.
   @issue-data-heterogeneity[Data Heterogeneity and Client Drift]; simple parameter averaging does
   not guarantee clean composition of distinct skills.
 - LoRA reduces transmitted state, but clients still download, train, and upload across repeated
-  rounds, so communication and device-resource constraints remain.
+  rounds; the relevant communication trade-offs remain as described in
+  @issue-communication-cost[Communication Cost and Synchronization].
 - A malicious client can submit a poisoned adapter update. The framework does not itself provide a
   complete defense against poisoning or backdoors.
 - The supplied paper discussion presents improved aggregation, client selection, personalization,

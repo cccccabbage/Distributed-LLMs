@@ -1,103 +1,109 @@
 ﻿paper_name,link,publication time,learned
-Decentralized Low-Rank Fine-Tuning of Large Language Models,https://arxiv.org/abs/2501.15361,2025-01,Yes
+DiLoCo: Distributed Low-Communication Training of Language Models,https://arxiv.org/abs/2311.08105,2023-11,Yes
 Efficient Deployment of Large Language Models on Resource-constrained Devices (FedSpine),https://arxiv.org/abs/2501.02438,2025-01,Yes
-Exploring Potential Prompt Injection Attacks in Federated Military LLMs and Their Mitigation,https://arxiv.org/abs/2501.18416,2025-01,No
-Federated Fine-Tuning of LLMs: Framework Comparison and Research Directions,https://arxiv.org/abs/2501.04436,2025-01,No
-Federated Sketching LoRA: A Flexible Framework for Heterogeneous Collaborative LLM Fine-Tuning,https://arxiv.org/abs/2501.19389,2025-01,No
-"I Can't Share Code, but I need Translation -- An Empirical Study on Code Translation through Federated LLM",https://arxiv.org/abs/2501.05724,2025-01,No
-Pilot: Building the Federated Multimodal Instruction Tuning Framework,https://arxiv.org/abs/2501.13985,2025-01,No
-Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models,https://arxiv.org/abs/2501.13904,2025-01,No
-A Robustness Optimization Framework for Federated LLMs,https://arxiv.org/abs/2502.11863,2025-02,No
-Federated Fine-Tuning of Large Language Models: Kahneman-Tversky vs. Direct Preference Optimization,https://arxiv.org/abs/2502.14187,2025-02,No
-FedP²EFT: Federated Learning to Personalize Parameter-Efficient Fine-Tuning for Large Language Models,https://arxiv.org/abs/2502.04387,2025-02,No
-Mitigating Unintended Memorization with LoRA in Federated Learning for LLMs,https://arxiv.org/abs/2502.05087,2025-02,No
-PPC-GPT: Federated Task-Specific Compression of Large Language Models via Pruning and Chain-of-Thought Distillation,https://arxiv.org/abs/2502.15857,2025-02,No
-Responsible Federated LLMs via Safety Filtering and Data Redaction,https://arxiv.org/abs/2502.16691,2025-02,No
-Robust Federated Finetuning of LLMs via Alternating Optimization of LoRA,https://arxiv.org/abs/2502.01755,2025-02,No
-A Survey on Federated Fine-tuning of Large Language Models,https://arxiv.org/abs/2503.12016,2025-03,No
-Efficient Federated Fine-Tuning of LLMs with Layer Dropout,https://arxiv.org/abs/2503.10217,2025-03,No
-FedALT: Federated Fine-Tuning through Adaptive Local Training with Rest-of-the-World LoRA,https://arxiv.org/abs/2503.11880,2025-03,No
-HLoRA: Efficient Federated Learning System for LLM Fine-Tuning,https://arxiv.org/abs/2503.00813,2025-03,No
-Pluralistic Alignment in LLMs via Federated Learning,https://arxiv.org/abs/2503.09925,2025-03,No
-PriFFT: Privacy-preserving Federated Fine-tuning of Large Language Models,https://arxiv.org/abs/2503.03146,2025-03,No
-Research on Large Language Model Cross-Cloud Privacy Protection and Collaborative Training based on Federated Learning,https://arxiv.org/abs/2503.12226,2025-03,No
-Resource-Efficient Federated Fine-Tuning Large Language Models for Heterogeneous Data (HierFedLoRA),https://arxiv.org/abs/2503.21213,2025-03,No
-Efficient Federated Split Learning for Large Language Models over Communication Networks,https://arxiv.org/abs/2504.14667,2025-04,No
-Federated Learning with Layer Skipping,https://arxiv.org/abs/2504.10536,2025-04,No
-AFLoRA: Adaptive Federated Fine-Tuning of LLMs with Resource-Aware Low-Rank Adaptation,https://arxiv.org/abs/2505.24773,2025-05,No
-Exploring Federated Pruning for Large Language Models,https://arxiv.org/abs/2505.13547,2025-05,No
-"Federated Large Language Models: Feasibility, Robustness, Security and Future Directions",https://arxiv.org/abs/2505.08830,2025-05,No
-"FedSEA-LLaMA: A Secure, Efficient and Adaptive Federated Learning Framework for LLaMA",https://arxiv.org/abs/2505.15683,2025-05,No
-HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for LLMs,https://arxiv.org/abs/2505.02795,2025-05,No
-FedShield-LLM: A Secure and Scalable Federated Fine-Tuned Large Language Model,https://arxiv.org/abs/2506.05640,2025-06,No
-FLoRIST: Singular Value Thresholding for Efficient and Accurate Federated Fine-Tuning of Large Language Models,https://arxiv.org/abs/2506.09199,2025-06,No
-FlowerTune: A Cross-Domain Benchmark for Federated Fine-Tuning of Large Language Models,https://arxiv.org/abs/2506.02961,2025-06,No
-Memory-Efficient Split Federated Learning for LLM Fine-Tuning on Heterogeneous Mobile Devices,https://arxiv.org/abs/2506.02940,2025-06,No
-Mitigating Non-IID Drift in Zeroth-Order Federated LLM Fine-Tuning with Transferable Sparsity,https://arxiv.org/abs/2506.03337,2025-06,No
-Movable Antenna Enhanced Federated Fine-Tuning of Large Language Models via Hybrid Client Selection Optimization,https://arxiv.org/abs/2506.00011,2025-06,No
-Ravan: Multi-Head Low-Rank Adaptation for Federated Fine-Tuning,https://arxiv.org/abs/2506.05568,2025-06,No
-Differentially Private Federated Low Rank Adaptation of Large Language Models,https://arxiv.org/abs/2507.09990,2025-07,No
-Scaling Decentralized Learning with FLock,https://arxiv.org/abs/2507.15349,2025-07,No
-Fed MobiLLM: Efficient Federated LLM Fine-Tuning over Heterogeneous Mobile Devices via Server-Assisted Side-Tuning,https://arxiv.org/abs/2508.06765,2025-08,No
-FedChip: Federated LLM for AI-Assisted Chip Design,https://arxiv.org/abs/2508.13162,2025-08,No
-FedCoT: Communication-Efficient Federated Reasoning Enhancement for Large Language Models,https://arxiv.org/abs/2508.10020,2025-08,No
-Federated Fine-Tuning of Sparsely-Activated Large Language Models on Resource-Constrained Devices,https://arxiv.org/abs/2508.19078,2025-08,No
-FedSODA: Federated Fine-tuning of LLMs via Similarity-based Online Data Assignment,https://arxiv.org/abs/2508.12727,2025-08,No
-Learning Like Humans: Resource-Efficient Federated Fine-Tuning of Large Language Models,https://arxiv.org/abs/2508.00041,2025-08,No
-Memory-Efficient Federated Fine-Tuning of Large Language Models via Layer Pruning,https://arxiv.org/abs/2508.17209,2025-08,No
-Oblivionis: A Lightweight Learning and Unlearning Framework for Federated LLMs,https://arxiv.org/abs/2508.08875,2025-08,No
-On the Evolution of Federated Post-Training Large Language Models: A Model Accessibility View,https://arxiv.org/abs/2508.16261,2025-08,No
-Can Federated Learning Safeguard Private Data in LLM Fine-Tuning?,https://arxiv.org/abs/2509.20680,2025-09,No
-Communication-Aware Knowledge Distillation for Federated LLM Fine-Tuning over Wireless Networks,https://arxiv.org/abs/2509.01750,2025-09,No
-DP-FedLoRA: Privacy-Enhanced Federated Fine-Tuning for On-Device Large Language Models,https://arxiv.org/abs/2509.09097,2025-09,No
-Rethinking Parameter Sharing for LLM Fine-Tuning with Asymmetric LoRA,https://arxiv.org/abs/2509.25414,2025-09,No
-FedLoDrop: Federated LoRA with Dropout for Generalized LLM Fine-tuning,https://arxiv.org/abs/2510.12078,2025-10,No
-FedSRD: Sparsify-Reconstruct-Decompose for Communication-Efficient Federated Large Language Models Fine-Tuning,https://arxiv.org/abs/2510.04601,2025-10,No
-Flow of Knowledge: Federated Fine-Tuning of LLMs in Healthcare under Non-IID Conditions,https://arxiv.org/abs/2510.00543,2025-10,No
-Watermark Robustness and Radioactivity May Be at Odds in Federated Learning,https://arxiv.org/abs/2510.17033,2025-10,No
-ADF-LoRA: Alternating Low-Rank Aggregation for Decentralized Federated Fine-Tuning,https://arxiv.org/abs/2511.18291,2025-11,No
-FIRM: Federated In-client Regularized Multi-objective Alignment for Large Language Models,https://arxiv.org/abs/2511.16992,2025-11,No
-Implicit Federated In-context Learning for Task-Specific LLM Fine-Tuning,https://arxiv.org/abs/2511.06757,2025-11,No
-Fed-SE: Federated Self-Evolution for Privacy-Constrained Multi-Environment LLM Agents,https://arxiv.org/abs/2512.08870,2025-12,No
-HFedMoE: Resource-aware Heterogeneous Federated Learning with Mixture-of-Experts,https://arxiv.org/abs/2601.00583,2026-01,No
-Learning to Collaborate: An Orchestrated-Decentralized Framework for Peer-to-Peer LLM Federation,https://arxiv.org/abs/2601.17133,2026-01,No
-Low Rank Comes with Low Security: Gradient Assembly Poisoning Attacks against Distributed LoRA-based LLM Systems,https://arxiv.org/abs/2601.00566,2026-01,No
-ProToken: Token-Level Attribution for Federated Large Language Models,https://arxiv.org/abs/2601.19672,2026-01,No
-Reconstructing Training Data from Adapter-based Federated Large Language Models,https://arxiv.org/abs/2601.17533,2026-01,No
-Safe-FedLLM: Delving into the Safety of Federated Large Language Models,https://arxiv.org/abs/2601.07177,2026-01,No
-SDFLoRA: Selective Dual-Module LoRA for Federated Fine-tuning with Heterogeneous Clients,https://arxiv.org/abs/2601.11219,2026-01,No
-FedRot-LoRA: Mitigating Rotational Misalignment in Federated LoRA,https://arxiv.org/abs/2602.23638,2026-02,No
-Floe: Federated Specialization for Real-Time LLM-SLM Inference,https://arxiv.org/abs/2602.14302,2026-02,No
-FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignment,https://arxiv.org/abs/2602.17095,2026-02,No
-Heterogeneous Federated Fine-Tuning with Parallel One-Rank Adaptation,https://arxiv.org/abs/2602.16936,2026-02,No
-Rethinking LoRA for Privacy-Preserving Federated Fine-Tuning,https://arxiv.org/abs/2602.19926,2026-02,No
-SecureGate: Learning When to Reveal PII Safely via Token-Gated Dual-Adapters for Federated LLMs,https://arxiv.org/abs/2602.13529,2026-02,No
-Wireless Federated Multi-Task LLM Fine-Tuning via Sparse-and-Orthogonal LoRA,https://arxiv.org/abs/2602.20492,2026-02,No
-A Step Toward Federated Pretraining of Multimodal Large Language Models,https://arxiv.org/abs/2603.26786,2026-03,No
-Aggregation Alignment for Federated Learning with Mixture-of-Experts under Data Heterogeneity,https://arxiv.org/abs/2603.21276,2026-03,No
-Federated Inference for Heterogeneous LLM Communication and Collaboration,https://arxiv.org/abs/2603.28772,2026-03,No
-FedMomentum: Preserving LoRA Training Momentum in Federated Fine-Tuning,https://arxiv.org/abs/2603.08014,2026-03,No
-FedPDPO: Federated Personalized Direct Preference Optimization for Large Language Model Alignment,https://arxiv.org/abs/2603.19741,2026-03,No
-FedTreeLoRA: Reconciling Statistical and Functional Heterogeneity in Federated LoRA Fine-Tuning,https://arxiv.org/abs/2603.13282,2026-03,No
-Stabilized Fine-Tuning with LoRA in Federated Learning: Mitigating the Side Effect of Client Size and Rank via the Scaling Factor,https://arxiv.org/abs/2603.08058,2026-03,No
-APPA: Adaptive Preference Pluralistic Alignment for Fair Federated RLHF of LLMs,https://arxiv.org/abs/2604.04261,2026-04,No
+Eager Updates for Overlapped Communication and Computation in DiLoCo,https://arxiv.org/abs/2502.12996,2025-02,No
+Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow,https://www.pdl.cmu.edu/PDL-FTP/BigLearning/helix_abs.shtml,2025-03,No
+HLoRA: Efficient Federated Learning System for LLM Heterogeneous Fine-Tuning,https://arxiv.org/abs/2503.00813,2025-03,No
+HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment,https://arxiv.org/abs/2502.07903,2025-04,No
+Preble: Efficient Distributed Prompt Scheduling for LLM Serving,https://proceedings.iclr.cc/paper_files/paper/2025/hash/5bc342f48de8264779952fac378f96dc-Abstract-Conference.html,2025-04,No
+SflLLM: Efficient Split Federated Learning for LLMs over Communication Networks,https://arxiv.org/abs/2504.14667,2025-04,No
+Towards Federated Low-Rank Adaptation of Language Models with Rank Heterogeneity,https://aclanthology.org/2025.naacl-short.30/,2025-04,No
+EdgeShard: Efficient LLM Inference via Collaborative Edge Computing,https://research.polyu.edu.hk/en/publications/edgeshard-efficient-llm-inference-via-collaborative-edge-computin/,2025-05,No
+FAH-QLoRA: Federated Adaptive Fine-Tuning of LLMs with Heterogeneous Quantization and LoRA,https://doi.org/10.1109/INFOCOM55648.2025.11044641,2025-05,No
+Incentivizing Permissionless Distributed Learning of LLMs,https://arxiv.org/abs/2505.21684,2025-05,No
+INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized Reinforcement Learning,https://arxiv.org/abs/2505.07291,2025-05,No
+Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,https://arxiv.org/abs/2504.08242,2025-05,No
+Model-Distributed Inference for Large Language Models at the Edge (MDI-LLM),https://arxiv.org/abs/2505.18164,2025-05,No
+Photon: Federated LLM Pre-Training,https://proceedings.mlsys.org/paper_files/paper/2025/hash/185087ea328b4f03ea8fd0c8aa96f747-Abstract-Conference.html,2025-05,No
+Seesaw: High-throughput LLM Inference via Model Re-sharding,https://proceedings.mlsys.org/paper_files/paper/2025/hash/cbc4ab80cd77aa0eb87da062fbcddb46-Abstract-Conference.html,2025-05,No
+"SPADA: Secure, Performant, and Distributed LLM Inference",https://openreview.net/forum?id=1FcjLaDk33,2025-05,No
+ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environments,https://arxiv.org/abs/2502.09334,2025-05,No
+FLAME: Towards Federated Fine-Tuning LLMs Through Adaptive SMoE,https://arxiv.org/abs/2506.16600,2025-06,No
+SiPipe: Bridging the CPU-GPU Utilization Gap for Efficient Pipeline-Parallel LLM Inference,https://arxiv.org/abs/2506.22033,2025-06,No
+AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks,https://www.usenix.org/conference/atc25/presentation/zhan,2025-07,No
+CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training,https://www.usenix.org/conference/atc25/presentation/chen-tiancheng,2025-07,No
+Decentralized Low-Rank Fine-Tuning of Large Language Models (Dec-LoRA),https://aclanthology.org/2025.realm-1.24/,2025-07,Yes
+DEEPSERVE: Serverless Large Language Model Serving at Scale,https://www.usenix.org/conference/atc25/presentation/hu-junhao,2025-07,No
+FedEx-LoRA: Exact Aggregation for Federated and Efficient Fine-Tuning of Large Language Models,https://aclanthology.org/2025.acl-long.67/,2025-07,No
+FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference,https://arxiv.org/abs/2507.02620,2025-07,No
+HALoS: Hierarchical Asynchronous Local SGD over Slow Networks for Geo-Distributed Large Language Model Training,https://proceedings.mlr.press/v267/kim25y.html,2025-07,No
+Idle No More: Boosting Distributed Pipeline Training via FluidPipe,https://repository.kaust.edu.sa/items/bc117621-9afd-4868-852a-19535837273e,2025-07,No
+LoRA-A²: Towards Robust and Efficient Federated Low-Rank Adaptation with Heterogeneous Clients,https://aclanthology.org/2025.acl-long.19/,2025-07,No
+Overcoming the Communication-Performance Tradeoff in LLM Pretraining (SparseLoCo),https://arxiv.org/abs/2508.15706,2025-08,No
+Serving LLM in Distributed GPU Cluster With Fine-Grain Pipeline Constraints (PLANCK),https://ieeexplore.ieee.org/document/11143904/,2025-09,No
+Fed-HeLLo: Efficient Federated Foundation Model Fine-Tuning With Heterogeneous LoRA Allocation,https://pubmed.ncbi.nlm.nih.gov/40627488/,2025-10,No
+GeoPipe: A Geo-distributed LLM Training Framework with Enhanced Pipeline Parallelism in a Lossless RDMA-enabled Datacenter Optical Transport Network,https://arxiv.org/abs/2510.12064,2025-10,No
+Te-LoRA: Tensor-aggregated LoRA in Federated Fine-tuning,https://openaccess.thecvf.com/content/ICCV2025/html/Li_Tensor-aggregated_LoRA_in_Federated_Fine-tuning_ICCV_2025_paper.html,2025-10,No
+Distributed LLM Serving on Consumer-Grade GPUs by Reconciling Computation and Communication,https://aclanthology.org/2025.findings-emnlp.957/,2025-11,No
+EcoLoRA: Communication-Efficient Federated Fine-Tuning of Large Language Models,https://aclanthology.org/2025.emnlp-main.1046/,2025-11,No
+Federated Attention: A Distributed Paradigm for Collaborative LLM Inference over Edge Networks,https://arxiv.org/abs/2511.02647,2025-11,No
+gLLM: Global Balanced Pipeline Parallelism System for Distributed LLM Serving with Token Throttling,https://arxiv.org/abs/2504.14775,2025-11,No
+Hetis: Serving LLMs in Heterogeneous GPU Clusters with Fine-grained and Dynamic Parallelism,https://arxiv.org/abs/2509.08309,2025-11,No
+Multiplexed Heterogeneous LLM Serving via Stage-Aligned Parallelism (ParaFlex),https://www.vincen.tl/files/luo25paraflex.pdf,2025-11,No
+pFedGPT: Hierarchically Optimizing LoRA Aggregation Weights for Personalized Federated GPT Models,https://aclanthology.org/2025.emnlp-main.239/,2025-11,No
+ACCO: Accumulate While You Communicate for Communication-Overlapped Sharded LLM Training,https://proceedings.neurips.cc/paper_files/paper/2025/hash/6454dcd80b5373daaa97e53ce32c78a1-Abstract-Conference.html,2025-12,No
+DynaPipe: Dynamic Layer Redistribution for Efficient Serving of LLMs with Pipeline Parallelism,https://proceedings.neurips.cc/paper_files/paper/2025/hash/c80873f613504606542457ad715ac3c3-Abstract-Conference.html,2025-12,No
+RoLoRA: Robust Federated Finetuning of LLMs via Alternating Optimization of LoRA,https://arxiv.org/abs/2502.01755,2025-12,No
+Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL,https://arxiv.org/abs/2512.23310,2025-12,No
+Heterogeneous Low-Bandwidth Pre-Training of LLMs,https://arxiv.org/abs/2601.02360,2026-01,No
+DiLLeMa: An Extensible and Scalable Framework for Distributed LLM Inference on Multi-GPU Clusters,https://www.sciencedirect.com/science/article/pii/S2352711026000312,2026-02,No
+Dynamic Micro-Batch and Token-Budget Scheduling for IoT-Scale Pipeline-Parallel LLM Inference,https://www.mdpi.com/1424-8220/26/4/1101,2026-02,No
+FedADC: Federated Fine-Tuning on Heterogeneous Data with Alternating Device-to-Device Collaboration,https://www.sciencedirect.com/science/article/pii/S1389128625008965,2026-02,No
+FedALT: Federated Fine-Tuning Through Adaptive Local Training with Rest-of-World LoRA,https://ojs.aaai.org/index.php/AAAI/article/view/39054,2026-02,No
+FedKRSO: Communication and Memory Efficient Federated Fine-Tuning of LLMs,https://arxiv.org/abs/2602.03019,2026-02,No
+Learning to Collaborate: An Orchestrated-Decentralized Framework for Peer-to-Peer LLM Federation (KNEXA-FL),https://ojs.aaai.org/index.php/AAAI/article/view/39742,2026-02,No
+Privacy-Aware Split Inference with Speculative Decoding for LLMs over WANs,https://arxiv.org/abs/2602.16760,2026-02,No
+Resource-Efficient Personal Large Language Models Fine-Tuning With Collaborative Edge Computing,https://doi.org/10.1109/TPDS.2026.3654957,2026-03,No
+BloomBee: Distributed Generative Inference of LLM at Internet Scales with Multi-Dimensional Communication Optimization,https://arxiv.org/abs/2604.21072,2026-04,No
+DeMo: Decoupled Momentum Optimization,https://openreview.net/forum?id=U9oewpa7cn,2026-04,No
+DES-LOC: Desynced Low Communication Adaptive Optimizers for Foundation Models,https://proceedings.iclr.cc/paper_files/paper/2026/hash/46a64917ae77556266a5fb4cbc99a201-Abstract-Conference.html,2026-04,No
+DualMap: Enabling Both Cache Affinity and Load Balancing for Distributed LLM Serving,https://arxiv.org/abs/2602.06502,2026-04,No
+Efficient LLM Inference over Heterogeneous Edge Networks with Speculative Decoding,https://arxiv.org/abs/2510.11331,2026-04,No
 FED-FSTQ: Fisher-Guided Token Quantization for Communication-Efficient Federated Fine-Tuning of LLMs on Edge Devices,https://arxiv.org/abs/2604.25421,2026-04,No
-FedLLM: A Privacy-Preserving Federated Large Language Model for Freeway Traffic Flow Prediction,https://arxiv.org/abs/2604.16612,2026-04,No
-FedSpy-LLM: Towards Scalable and Generalizable Data Reconstruction Attacks from Gradients on LLMs,https://arxiv.org/abs/2604.06297,2026-04,No
-SpecFed: Accelerating Federated LLM Inference with Speculative Decoding and Compressed Transmission,https://arxiv.org/abs/2604.25777,2026-04,No
-Toward Efficient Membership Inference Attacks against Federated Large Language Models: A Projection Residual Approach,https://arxiv.org/abs/2604.21197,2026-04,No
+Fed-PLoRA: Heterogeneous Federated Fine-Tuning with Parallel One-Rank Adaptation,https://arxiv.org/abs/2602.16936,2026-04,No
+FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters,https://doi.org/10.1145/3767295.3769316,2026-04,No
+FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignment,https://openreview.net/forum?id=kntrZOm2AQ,2026-04,No
+MT-DAO: Multi-Timescale Distributed Adaptive Optimizers with Local Updates,https://openreview.net/pdf?id=5yPP238v4c,2026-04,No
+SplitFT: An Adaptive Federated Split Learning System for LLMs Fine-Tuning,https://arxiv.org/abs/2604.26388,2026-04,No
+Towards a Solution to the Management Scaling Paradox in Distributed LLM Inference,https://noohi.org/publications/rmc-management-scaling-paradox,2026-04,No
 Beyond Parameter Aggregation: Semantic Consensus for Federated Fine-Tuning of LLMs,https://arxiv.org/abs/2605.11857,2026-05,No
-EdgeFlowerTune: Evaluating Federated LLM Fine-Tuning Under Realistic Edge System Constraints,https://arxiv.org/abs/2605.08636,2026-05,No
-FedAttr: Towards Privacy-preserving Client-Level Attribution in Federated LLM Fine-tuning,https://arxiv.org/abs/2605.06596,2026-05,No
-Federated LoRA Fine-Tuning for LLMs via Collaborative Alignment,https://arxiv.org/abs/2605.21217,2026-05,No
-Self-Play Enhancement via Advantage-Weighted Refinement in Online Federated LLM Fine-Tuning with Real-Time Feedback,https://arxiv.org/abs/2605.07977,2026-05,No
-"Towards the Next Frontier of LLMs, Training on Private Data: A Cross-Domain Benchmark for Federated Fine-Tuning",https://arxiv.org/abs/2605.13936,2026-05,No
-AlignFed: Alignment-Aware Asynchronous Federated Fine-Tuning for Large Language Models in Heterogeneous Edge Environments,https://arxiv.org/abs/2606.08197,2026-06,No
-FederatedSkill: Federated Learning for Agentic Skill Evolution,https://arxiv.org/abs/2606.03143,2026-06,No
-When the Aggregator Cheats: Data-Free Backdoors in Federated LLM-based QA Systems,https://arxiv.org/abs/2606.27511,2026-06,No
-FedAgentKE: Federated Semantic Knowledge Evolution for Heterogeneous Agents,https://arxiv.org/abs/2607.21361,2026-07,No
-FedWeave: Rethinking the Unit of Specialization in Heterogeneous Federated MoE-LoRA,https://arxiv.org/abs/2607.26618,2026-07,No
-HermesHFL: Incentive-Compatible Hierarchical Federated Unlearning for Dynamic LLM Fine-Tuning,https://arxiv.org/abs/2607.11528,2026-07,No
-SpeechLLM Meets Federated Learning for End-to-End ASR: English and Italian Case Studies,https://arxiv.org/abs/2607.25716,2026-07,No
-FedWorld: Scope-Aware Federation of Agent World Models,https://arxiv.org/abs/2608.01561,2026-08,No
-Rethinking Factor Sharing in Federated LoRA: A Rank-Aware Adaptive Approach,https://arxiv.org/abs/2608.09742,2026-08,No
+DreamDDP: Accelerating Low-Bandwidth Geo-Distributed LLM Training with Layer-wise Partial Synchronization,https://proceedings.mlsys.org/paper_files/paper/2026/hash/f5c530d3f287c43dccfca298698e9254-Abstract-Conference.html,2026-05,No
+DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants,https://www.usenix.org/conference/nsdi26/presentation/liu-yuhan,2026-05,No
+FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference,https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang,2026-05,No
+FedOTAB: Federated LoRA Fine-Tuning of LLMs with Only Transmitting Matrix A or B,https://researchportal.hkust.edu.hk/en/publications/federated-lora-fine-tuning-of-llms-with-only-transmitting-matrix-/,2026-05,No
+FedQuad: Adaptive Layer-Wise LoRA Deployment and Activation Quantization for Federated Fine-Tuning,https://arxiv.org/abs/2506.01001,2026-05,No
+"PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing LLM Serving",https://www.usenix.org/conference/nsdi26/presentation/fang,2026-05,No
+SYMPHONY: Enabling Compute-Memory Disaggregation in LLM Serving Systems,https://www.usenix.org/conference/nsdi26/presentation/agarwal,2026-05,No
+Breaking the Bubble: Asynchronous Pipeline Parallel Training with Bounded Weight Inconsistency,https://arxiv.org/abs/2606.07881,2026-06,No
+DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries,https://www.iscaconf.org/isca2026/program/,2026-06,No
+HALO: Semantic-Aware Distributed LLM Inference in Lossy Edge Network,https://arxiv.org/abs/2601.11676,2026-06,No
+Unifying Local Communications and Local Updates for LLM Pretraining (GASLoC),https://arxiv.org/abs/2606.11081,2026-06,No
+ASTRA: Communication-Efficient Acceleration for Multi-Device Transformer Inference,https://arxiv.org/abs/2505.19342,2026-07,No
+Can Model Merging Improve Aggregation in DiLoCo?,https://arxiv.org/abs/2607.03011,2026-07,No
+CoCoQuant: Breaking the Bandwidth Wall via Co-Optimized Communication and Computation Quantization,https://openreview.net/forum?id=Bxyc3JZtAB,2026-07,No
+D-ARL: A Distribution-Matched Asynchronous Reinforcement Learning Framework for Language Reasoning,https://openreview.net/forum?id=yRbIv7Zd4q,2026-07,No
+Decentralized Instruction Tuning: Conflict-Aware Splitting and Weight Merging,https://arxiv.org/abs/2606.01717,2026-07,No
+DistFlow: A Fully Distributed RL Framework for Scalable and Efficient LLM Post-Training,https://arxiv.org/abs/2507.13833,2026-07,No
+EasyBalance: Cross-Layer Load Balancing in Distributed MoE Inference,https://arxiv.org/abs/2608.07964,2026-07,No
+Efficient and Privacy Aware Edge Cloud Collaborative Inference for Large Language Models,https://arxiv.org/abs/2607.13093,2026-07,No
+Efficient Multi-round LLM Inference over Disaggregated Serving,https://arxiv.org/abs/2602.14516,2026-07,No
+Factored Gossip DiLoCo: Reducing Blocking Communication in DiLoCo,https://arxiv.org/abs/2606.22768,2026-07,No
+Fed-ALoRA: Rethinking Parameter Sharing for LLM Fine-Tuning with Multiple LoRAs,https://aclanthology.org/2026.findings-acl.625/,2026-07,No
+FedProxy: Federated Fine-Tuning of LLMs via Proxy SLMs and Heterogeneity-Aware Fusion,https://aclanthology.org/2026.acl-long.794/,2026-07,No
+Global Adaptive Momentum Meets Local Personalized Perturbation: Efficient Federated LLM Fine-Tuning with Zeroth-Order Gradients,https://aclanthology.org/2026.acl-long.1851/,2026-07,No
+GMFL: Efficient Global Masking for Federated LLM Fine-tuning,https://aclanthology.org/2026.acl-long.1160/,2026-07,No
+HexGen-3: A Fully Disaggregated LLM Serving Framework with Fine-Grained Heterogeneous Resource Autoscaling,https://openreview.net/pdf/39244b43ee72f3711ff8f4e172fff5c9c70a261b.pdf,2026-07,No
+HybridFlow: Resource-Adaptive Subtask Routing for Efficient Edge-Cloud LLM Inference,https://arxiv.org/abs/2512.22137,2026-07,No
+Identifying and Mitigating Errors in Gradient Aggregation of Distributed Data Parallel Training,https://openreview.net/pdf/25bb970a3050752d12f51a67421c31cdb14af4b6.pdf,2026-07,No
+iFLoRA: Federated LoRA Fine-Tuning with Pipelined Error-Mitigated Aggregation and Matrix-Wise Freezing,https://aclanthology.org/2026.findings-acl.284/,2026-07,No
+Learned Subspace Compression for Communication-Efficient Pipeline Parallelism (MAPL),https://arxiv.org/abs/2606.05484,2026-07,No
+LoRDO: Distributed Low-Rank Optimization with Infrequent Communication,https://arxiv.org/abs/2602.04396,2026-07,No
+Mitigating Staleness in Asynchronous Pipeline Parallelism via Basis Rotation,https://arxiv.org/abs/2602.03515,2026-07,No
+MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo,https://arxiv.org/abs/2505.23725,2026-07,No
+Multi-Head LatentMoE and Head Parallel: Communication-Efficient and Deterministic MoE Parallelism,https://arxiv.org/abs/2602.04870,2026-07,No
+Not All Prefills Are Equal: PPD Disaggregation for Multi-turn LLM Serving,https://arxiv.org/abs/2603.13358,2026-07,No
+One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining,https://arxiv.org/abs/2606.30634,2026-07,No
+SCAPE: Accurate and Efficient LLM Training with Extreme Sparse Communication,https://arxiv.org/abs/2607.01678,2026-07,No
+Semantic Cache Distillation: Efficient State Transfer via Reuse and Selective Patching,https://arxiv.org/abs/2606.07684,2026-07,No
+SPARe: Stacked Parallelism with Adaptive Reordering for Fault-Tolerant LLM Pretraining Systems with 100k+ GPUs,https://arxiv.org/abs/2603.00357,2026-07,No
+Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention,https://arxiv.org/abs/2608.03555,2026-08,No
