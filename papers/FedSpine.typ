@@ -25,10 +25,10 @@ secure aggregation, differential privacy, or defenses against malicious updates 
 contribution.
 
 The paper's additional systems concern is that LoRA reduces the trainable state but does not reduce
-the frozen base model used for inference. A single pruning ratio and adapter rank are also poorly
-suited to a fleet with unequal compute, memory, and network capacity: synchronous rounds wait for
-their slowest participating client. FedSpine therefore targets the joint accuracy--training-cost--
-inference-cost trade-off, while reducing straggler effects through per-device configurations.
+the frozen base model used for inference. FedSpine instantiates
+@issue-resource-heterogeneity[Resource Heterogeneity and Configuration Adaptation] by selecting a
+pruning ratio and adapter rank per device. It therefore targets the joint accuracy--training-cost--
+inference-cost trade-off while reducing straggler effects through per-device configurations.
 
 === Method
 

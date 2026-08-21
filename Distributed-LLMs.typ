@@ -23,6 +23,7 @@
 
 #include "issues/data-heterogeneity.typ"
 #include "issues/communication-cost.typ"
+#include "issues/resource-heterogeneity.typ"
 
 = Papers
 
@@ -32,6 +33,7 @@
 #include "papers/DiLoCo.typ"
 #include "papers/Eager-Updates.typ"
 #include "papers/Helix.typ"
+#include "papers/HLoRA.typ"
 
 = References
 

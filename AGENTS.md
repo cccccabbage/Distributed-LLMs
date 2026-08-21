@@ -38,6 +38,8 @@ in `Background Knowledge` or `Common Issues`.
   note.
 - A common-issue section may summarize and compare broad solution families, but detailed paper
   methods belong in their respective paper notes.
+- Keep shared background and common-issue sections paper-neutral. Do not explain how individual
+  papers address a shared topic there; keep those paper-specific solutions in their paper notes.
 - Create shared material only when it is established background or genuinely useful across papers.
   Do not create a new file merely to eliminate a small amount of repeated text.
 - Cite the appropriate original sources in shared sections. A cross-reference does not replace a
@@ -157,6 +159,8 @@ When converting Markdown to Typst:
 ## Sources and Citations
 
 - Add bibliographic records to `reference.bib` and cite them with their BibTeX keys.
+- Cite a paper only once in its individual paper note, at its first substantive mention. Use
+  citations in shared background or common-issue sections as needed to support their sources.
 - Keep experimental numbers and claims tied to their cited sources.
 - Do not present federated learning as an automatic or formal privacy guarantee. Distinguish data
   locality from protections such as secure aggregation and differential privacy.
