@@ -31,6 +31,7 @@
 #include "papers/FedSpine.typ"
 #include "papers/DiLoCo.typ"
 #include "papers/Eager-Updates.typ"
+#include "papers/Helix.typ"
 
 = References
 
