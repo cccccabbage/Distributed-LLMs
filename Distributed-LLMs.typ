@@ -35,6 +35,7 @@
 #include "papers/Eager-Updates.typ"
 #include "papers/Helix.typ"
 #include "papers/HLoRA.typ"
+#include "papers/Rank-Heterogeneity.typ"
 #include "papers/Preble.typ"
 #include "papers/EdgeShard.typ"
 
