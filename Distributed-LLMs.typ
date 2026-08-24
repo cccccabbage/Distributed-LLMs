@@ -24,6 +24,7 @@
 #include "issues/data-heterogeneity.typ"
 #include "issues/communication-cost.typ"
 #include "issues/resource-heterogeneity.typ"
+#include "issues/inference-resource-heterogeneity.typ"
 
 = Papers
 
@@ -35,6 +36,7 @@
 #include "papers/Helix.typ"
 #include "papers/HLoRA.typ"
 #include "papers/Preble.typ"
+#include "papers/EdgeShard.typ"
 
 = References
 

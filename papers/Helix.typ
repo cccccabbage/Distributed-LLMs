@@ -15,11 +15,10 @@ lower decoding latency.
 
 === Issues Addressed
 
-The paper targets heterogeneous LLM serving, where an even layer partition can leave fast GPUs idle
-behind slower compute stages and where transferring activations over a slow or wide-area link can
-erase the benefit of an otherwise balanced placement. Model placement, network congestion, and
-request routing are coupled: choosing them independently can create bottlenecks elsewhere in the
-pipeline.
+The paper instantiates @issue-inference-resource-heterogeneity[Distributed-Inference Resource
+  Heterogeneity and Model Placement] with a throughput-oriented cluster design. Its particular
+problem is to model the interaction between layer placement, network congestion, and traffic
+routing, rather than choosing each independently and creating bottlenecks elsewhere in the pipeline.
 
 Helix also addresses the limited flexibility of fixed, disjoint pipelines. Different requests may
 need to take different, potentially overlapping GPU paths to use the cluster's mixed resources
