@@ -19,10 +19,9 @@ higher final accuracy than the evaluated pruning baselines at the same sparsity.
 
 FedSpine uses @background-federated-learning[Federated Learning] to adapt a model using private,
 distributed client data without centralizing raw examples. It also faces the non-IID-data effects
-described in @issue-data-heterogeneity[Data Heterogeneity and Client Drift]. Data locality is not a
-complete privacy guarantee: model updates can still leak information, and the paper does not make
-secure aggregation, differential privacy, or defenses against malicious updates a central
-contribution.
+described in @issue-data-heterogeneity[Data Heterogeneity and Client Drift]. Its exchanged model
+updates retain the privacy risks summarized in @issue-privacy-leakage[Privacy Leakage Beyond Data
+  Locality]; the paper does not make a protection mechanism a central contribution.
 
 The paper's additional systems concern is that LoRA reduces the trainable state but does not reduce
 the frozen base model used for inference. FedSpine instantiates

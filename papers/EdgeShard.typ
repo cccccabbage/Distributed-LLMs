@@ -45,9 +45,9 @@ device selection and partitioning, but the reported $O(N^2 2^M M^2)$ complexity 
 with the number of candidate devices.
 
 To reduce direct exposure of the prompt, EdgeShard requires the source device to execute the first
-layer. Subsequent devices receive its intermediate activation rather than the raw input; this is a
-data-locality design choice, not a formal privacy guarantee, because activations may still reveal
-input information.
+layer. Subsequent devices receive its intermediate activation rather than the raw input. This
+reduces direct exposure but retains the representation-leakage risks summarized in
+@issue-privacy-leakage[Privacy Leakage Beyond Data Locality].
 
 === Pros and Cons
 
@@ -70,8 +70,8 @@ input information.
 - Partitioning depends on offline profiling; wireless congestion, device workloads, thermal
   throttling, and disconnections can invalidate the estimated costs, while the supplied notes do not
   describe continuous re-optimization.
-- Intermediate activations leave the source device, so the first-layer constraint does not protect
-  against inference or disclosure by a malicious or compromised participant.
+- Intermediate activations leave the source device, and the paper does not add a mechanism to
+  protect them from inference or disclosure by a malicious or compromised participant.
 - The approach depends on every selected device remaining available. Failure recovery, replication,
   device churn, and dynamic rerouting receive limited discussion in the supplied notes.
 - Evaluation is concentrated on Llama2 models and a controlled Jetson-plus-server testbed, leaving

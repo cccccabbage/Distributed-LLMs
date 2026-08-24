@@ -15,9 +15,9 @@ baselines, though centralized LoRA remains more accurate.
 === Issues Addressed
 
 HLoRA uses @background-federated-learning[Federated Learning] to fine-tune on distributed data
-without centralizing raw training examples. As with other federated approaches, data locality alone
-is not a complete privacy guarantee: clients still transmit adapter parameters or updates, and the
-method does not add secure aggregation, differential privacy, or cryptographic protections.
+without centralizing raw training examples. Its exchanged adapter parameters retain the privacy
+risks summarized in @issue-privacy-leakage[Privacy Leakage Beyond Data Locality]; the method does
+not add a protection mechanism.
 
 The paper instantiates @issue-resource-heterogeneity[Resource Heterogeneity and Configuration
   Adaptation] through a client-specific LoRA rank. Allowing ranks to differ creates factor matrices

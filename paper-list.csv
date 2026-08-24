@@ -7,7 +7,7 @@ Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max
 HLoRA: Efficient Federated Learning System for LLM Heterogeneous Fine-Tuning,https://arxiv.org/abs/2503.00813,2025-03,Yes
 HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment,https://arxiv.org/abs/2502.07903,2025-04,No
 Preble: Efficient Distributed Prompt Scheduling for LLM Serving,https://proceedings.iclr.cc/paper_files/paper/2025/hash/5bc342f48de8264779952fac378f96dc-Abstract-Conference.html,2025-04,Yes
-SflLLM: Efficient Split Federated Learning for LLMs over Communication Networks,https://arxiv.org/abs/2504.14667,2025-04,No
+SflLLM: Efficient Split Federated Learning for LLMs over Communication Networks,https://arxiv.org/abs/2504.14667,2025-04,Yes
 Towards Federated Low-Rank Adaptation of Language Models with Rank Heterogeneity,https://aclanthology.org/2025.naacl-short.30/,2025-04,Yes
 EdgeShard: Efficient LLM Inference via Collaborative Edge Computing,https://arxiv.org/abs/2405.14371,2025-05,Yes
 FAH-QLoRA: Federated Adaptive Fine-Tuning of LLMs with Heterogeneous Quantization and LoRA,https://doi.org/10.1109/INFOCOM55648.2025.11044641,2025-05,No

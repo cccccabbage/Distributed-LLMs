@@ -33,8 +33,8 @@ $
 
 Its analysis therefore works directly with the two factors. The local-update drift, imperfect
 consensus, and graph-connectivity trade-offs are discussed in @issue-data-heterogeneity[Data
-  Heterogeneity and Client Drift]. Keeping data local is not a complete privacy guarantee, because
-exchanged adapter parameters can still leak information.
+  Heterogeneity and Client Drift]. Exchanged adapter parameters retain the privacy risks summarized
+in @issue-privacy-leakage[Privacy Leakage Beyond Data Locality].
 
 === Method
 
@@ -77,7 +77,7 @@ memory-saving setting described in @background-qlora[QLoRA: Quantized LoRA].
 - Its evaluated heterogeneous-data and graph settings remain subject to the client-drift and
   communication trade-offs described in @issue-data-heterogeneity[Data Heterogeneity and Client
     Drift].
-- Data locality does not protect against leakage from exchanged parameters, and the method does not
-  establish defenses against inversion, reconstruction, or malicious clients.
+- The method does not add a defense against the leakage risks from exchanged parameters described in
+  @issue-privacy-leakage[Privacy Leakage Beyond Data Locality], or against malicious clients.
 - The analysis and experiments use controlled communication graphs and do not fully address client
   churn, unreliable links, asynchronous updates, heterogeneous hardware, or adversarial behavior.

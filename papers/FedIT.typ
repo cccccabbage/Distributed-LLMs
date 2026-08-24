@@ -23,8 +23,8 @@ FedIT treats client task, language, domain, and style differences as both a sour
 instruction diversity and an optimization difficulty; see @issue-data-heterogeneity[Data
   Heterogeneity and Client Drift].
 
-Finally, keeping instruction data local does not make the framework formally private. Client updates
-may leak information, while malicious participants may submit poisoned updates. Additional privacy
+Finally, client updates retain the privacy risks summarized in @issue-privacy-leakage[Privacy
+  Leakage Beyond Data Locality]. Malicious participants may also submit poisoned updates, so privacy
 and robustness mechanisms are needed when those risks are in scope.
 
 === Method
@@ -72,8 +72,6 @@ themselves establish formal privacy or robust convergence.
 
 ==== Cons
 
-- Data locality does not prevent information leakage from client updates. Strong privacy requires
-  additional mechanisms and a stated threat model.
 - The framework does not resolve the client-drift and aggregation challenges described in
   @issue-data-heterogeneity[Data Heterogeneity and Client Drift]; simple parameter averaging does
   not guarantee clean composition of distinct skills.

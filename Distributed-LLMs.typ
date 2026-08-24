@@ -25,6 +25,7 @@
 #include "issues/communication-cost.typ"
 #include "issues/resource-heterogeneity.typ"
 #include "issues/inference-resource-heterogeneity.typ"
+#include "issues/privacy-leakage.typ"
 
 = Papers
 
@@ -38,6 +39,7 @@
 #include "papers/Rank-Heterogeneity.typ"
 #include "papers/Preble.typ"
 #include "papers/EdgeShard.typ"
+#include "papers/SflLLM.typ"
 
 = References
 
