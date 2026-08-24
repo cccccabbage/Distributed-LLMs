@@ -18,6 +18,7 @@
 #include "background/federated-learning.typ"
 #include "background/LoRA.typ"
 #include "background/QLoRA.typ"
+#include "background/prefill-decode-kv-cache.typ"
 
 = Common Issues
 
@@ -33,6 +34,8 @@
 #include "papers/Dec-LoRA.typ"
 #include "papers/FedSpine.typ"
 #include "papers/DiLoCo.typ"
+#include "papers/HexGen.typ"
+#include "papers/HexGen-2.typ"
 #include "papers/Eager-Updates.typ"
 #include "papers/Helix.typ"
 #include "papers/HLoRA.typ"

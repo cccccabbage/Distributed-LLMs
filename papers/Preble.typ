@@ -12,11 +12,12 @@ strongest on workloads with substantial prefix sharing.
 
 === Issues Addressed
 
-Prefill processes an input prompt and builds the attention KV cache, whereas decoding generates
-output tokens incrementally. When inputs are long but outputs are short, repeated prefill dominates
-the request cost. Although a cached shared prefix can eliminate much of this repeated work, a
-conventional load balancer may route requests with the same prefix to different GPUs. Each GPU then
-recomputes and stores a separate copy, losing cache locality.
+Preble builds on the prefill, decode, and cache-locality trade-offs described in
+@background-prefill-decode-kv-cache[Prefill, Decode, and the Key-Value Cache]. Its particular
+workload contains long inputs and short outputs, so repeated prefill is costly. Although a cached
+shared prefix can eliminate much of this repeated work, a conventional load balancer may route
+requests with the same prefix to different GPUs. Each GPU then recomputes and stores a separate
+copy, losing cache locality.
 
 Always routing a request to the GPU holding its longest cached prefix is also insufficient: a
 popular prefix can turn that GPU into a hotspot. Preble therefore frames distributed prompt
