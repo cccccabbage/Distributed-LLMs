@@ -19,6 +19,7 @@
 #include "background/LoRA.typ"
 #include "background/QLoRA.typ"
 #include "background/prefill-decode-kv-cache.typ"
+#include "background/reinforcement-learning.typ"
 
 = Common Issues
 
