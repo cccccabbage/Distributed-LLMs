@@ -51,6 +51,7 @@
 #include "papers/INTELLECT-2.typ"
 #include "papers/Jupiter.typ"
 #include "papers/MDI-LLM.typ"
+#include "papers/Photon.typ"
 
 = References
 
