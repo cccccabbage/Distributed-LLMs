@@ -44,6 +44,7 @@
 #include "papers/Preble.typ"
 #include "papers/EdgeShard.typ"
 #include "papers/SflLLM.typ"
+#include "papers/Gauntlet.typ"
 
 = References
 
