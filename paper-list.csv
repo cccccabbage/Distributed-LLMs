@@ -10,7 +10,7 @@ Preble: Efficient Distributed Prompt Scheduling for LLM Serving,https://proceedi
 SflLLM: Efficient Split Federated Learning for LLMs over Communication Networks,https://arxiv.org/abs/2504.14667,2025-04,Yes
 Towards Federated Low-Rank Adaptation of Language Models with Rank Heterogeneity,https://aclanthology.org/2025.naacl-short.30/,2025-04,Yes
 EdgeShard: Efficient LLM Inference via Collaborative Edge Computing,https://arxiv.org/abs/2405.14371,2025-05,Yes
-FAH-QLoRA: Federated Adaptive Fine-Tuning of LLMs with Heterogeneous Quantization and LoRA,https://doi.org/10.1109/INFOCOM55648.2025.11044641,2025-05,No
+FAH-QLoRA: Federated Adaptive Fine-Tuning of LLMs with Heterogeneous Quantization and LoRA,https://doi.org/10.1109/INFOCOM55648.2025.11044641,2025-05,Yes
 Incentivizing Permissionless Distributed Learning of LLMs,https://arxiv.org/abs/2505.21684,2025-05,No
 INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized Reinforcement Learning,https://arxiv.org/abs/2505.07291,2025-05,No
 Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,https://arxiv.org/abs/2504.08242,2025-05,No

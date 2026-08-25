@@ -40,6 +40,7 @@
 #include "papers/Helix.typ"
 #include "papers/HLoRA.typ"
 #include "papers/Rank-Heterogeneity.typ"
+#include "papers/FAH-QLoRA.typ"
 #include "papers/Preble.typ"
 #include "papers/EdgeShard.typ"
 #include "papers/SflLLM.typ"

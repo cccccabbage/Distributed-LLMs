@@ -158,7 +158,8 @@ When converting Markdown to Typst:
 
 ## Sources and Citations
 
-- Add bibliographic records to `reference.bib` and cite them with their BibTeX keys.
+- Do not edit `reference.bib`.
+- Cite papers with their existing BibTeX keys.
 - Cite a paper only once in its individual paper note, at its first substantive mention. Use
   citations in shared background or common-issue sections as needed to support their sources.
 - Keep experimental numbers and claims tied to their cited sources.
