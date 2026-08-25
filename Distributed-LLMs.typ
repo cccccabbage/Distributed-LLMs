@@ -49,6 +49,7 @@
 #include "papers/SflLLM.typ"
 #include "papers/Gauntlet.typ"
 #include "papers/INTELLECT-2.typ"
+#include "papers/Jupiter.typ"
 
 = References
 
