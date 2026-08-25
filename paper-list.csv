@@ -12,7 +12,7 @@ Towards Federated Low-Rank Adaptation of Language Models with Rank Heterogeneity
 EdgeShard: Efficient LLM Inference via Collaborative Edge Computing,https://arxiv.org/abs/2405.14371,2025-05,Yes
 FAH-QLoRA: Federated Adaptive Fine-Tuning of LLMs with Heterogeneous Quantization and LoRA,https://doi.org/10.1109/INFOCOM55648.2025.11044641,2025-05,Yes
 Incentivizing Permissionless Distributed Learning of LLMs,https://arxiv.org/abs/2505.21684,2025-05,Yes
-INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized Reinforcement Learning,https://arxiv.org/abs/2505.07291,2025-05,No
+INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized Reinforcement Learning,https://arxiv.org/abs/2505.07291,2025-05,Yes
 Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,https://arxiv.org/abs/2504.08242,2025-05,No
 Model-Distributed Inference for Large Language Models at the Edge (MDI-LLM),https://arxiv.org/abs/2505.18164,2025-05,No
 Photon: Federated LLM Pre-Training,https://proceedings.mlsys.org/paper_files/paper/2025/hash/185087ea328b4f03ea8fd0c8aa96f747-Abstract-Conference.html,2025-05,No

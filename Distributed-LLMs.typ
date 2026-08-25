@@ -28,6 +28,8 @@
 #include "issues/resource-heterogeneity.typ"
 #include "issues/inference-resource-heterogeneity.typ"
 #include "issues/privacy-leakage.typ"
+#include "issues/untrusted-permissionless-compute.typ"
+#include "issues/asynchronous-update-staleness.typ"
 
 = Papers
 
@@ -46,6 +48,7 @@
 #include "papers/EdgeShard.typ"
 #include "papers/SflLLM.typ"
 #include "papers/Gauntlet.typ"
+#include "papers/INTELLECT-2.typ"
 
 = References
 

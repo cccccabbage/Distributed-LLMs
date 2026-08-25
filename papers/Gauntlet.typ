@@ -13,11 +13,10 @@ quality was competitive with their centralized baselines.
 
 === Issues Addressed
 
-Permissionless participation makes conventional assumptions about trusted workers and uniform
-hardware unavailable. A peer can submit a malformed, stale, copied, low-quality, or deliberately
-harmful update while still seeking rewards. Gauntlet therefore focuses on assigning both aggregation
-influence and economic rewards to useful contributions without enforcing an identical amount of
-local computation.
+Gauntlet addresses the threat model summarized in @issue-untrusted-permissionless-compute[Untrusted
+  Permissionless Compute] for compressed model updates. Its specific objective is to assign both
+aggregation influence and economic rewards to useful peer contributions without enforcing an
+identical amount of local computation.
 
 The paper also addresses the communication burden summarized in
 @issue-communication-cost[Communication Cost and Synchronization]. Its peers transmit compressed
@@ -78,7 +77,8 @@ through S3-compatible object storage rather than a bespoke peer-to-peer transpor
 
 - Assigned-data evidence is not a cryptographic proof of computation; a sophisticated participant
   may still game the evaluation signal or avoid immediate detection when primary evaluation is
-  sampled.
+  sampled. The broader limits of these defenses are discussed in
+  @issue-untrusted-permissionless-compute[Untrusted Permissionless Compute].
 - The defenses do not provide complete Byzantine robustness. A harmful update can influence the
   model before the peer's rating falls, and normalization mainly limits simple magnitude attacks.
 - Historical OpenSkill ratings can lag a peer's sudden change in behavior, while the synchronous

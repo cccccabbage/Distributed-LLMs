@@ -13,14 +13,12 @@ low-bandwidth settings, while avoiding most of the communication wait @kale_eage
 === Issues Addressed
 
 The paper addresses the residual synchronization latency in low-communication distributed training,
-an instance of @issue-communication-cost[Communication Cost and Synchronization]. In standard
+an instance of @issue-communication-cost[Communication Cost and Synchronization], and the resulting
+trade-off in @issue-asynchronous-update-staleness[Asynchronous Update Staleness]. In standard
 DiLoCo, a worker must finish a local block, exchange outer gradients, wait for the aggregate, and
 only then begin the following block. This leaves accelerators idle when cross-datacenter
-communication is slow.
-
-A simple delayed alternative begins the next block immediately, but applies an aggregate whose every
-component is one outer round old. The paper's specific problem is therefore how to hide outer-update
-communication while limiting the quality loss caused by stale updates.
+communication is slow. Eager Updates specifically seeks to hide that outer-update communication
+while limiting the quality loss from delayed remote contributions.
 
 === Method
 
@@ -48,8 +46,7 @@ $
 Thus, a worker does not wait for a current contribution that it already possesses; only remote
 contributions are stale. Since every worker has a different current local contribution, their eager
 outer updates may temporarily differ. The paper also evaluates eager updates alongside Streaming
-DiLoCo and lower-precision communication as complementary ways to reduce network requirements
-@kale_eager_2025.
+DiLoCo and lower-precision communication as complementary ways to reduce network requirements.
 
 === Pros and Cons
 
@@ -66,7 +63,8 @@ DiLoCo and lower-precision communication as complementary ways to reduce network
 ==== Cons
 
 - Remote contributions remain stale. Longer delays therefore still reduce model quality, so the
-  method tolerates rather than removes synchronization lag.
+  method tolerates rather than removes synchronization lag; see
+  @issue-asynchronous-update-staleness[Asynchronous Update Staleness].
 - Workers apply different eager aggregates during the overlap period, weakening the exact consensus
   of synchronized DiLoCo.
 - The main empirical evaluation trains models up to roughly one billion parameters; larger-scale
