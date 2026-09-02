@@ -2,14 +2,14 @@
 
 === Summary
 
-Jupiter@ye_jupiter_2025 is a collaborative inference system that runs a generative large language
-model (LLM) across resource-constrained, nearby edge devices. It uses unequal, consecutive
-Transformer-layer partitions to form a pipeline, then adds phase-specific scheduling to accelerate
-both prompt processing and autoregressive generation for a single request. For prefill, it turns one
-prompt into dependent sub-sequences that can occupy several pipeline stages concurrently. For
-decoding, it combines Medusa-style speculative decoding with an optional outline-based scheme that
-generates relatively independent answer sections in parallel. The paper reports up to a $26.1 times$
-end-to-end latency reduction over its evaluated baselines.
+Jupiter@yeJupiterFastResourceEfficient2025 is a collaborative inference system that runs a
+generative large language model (LLM) across resource-constrained, nearby edge devices. It uses
+unequal, consecutive Transformer-layer partitions to form a pipeline, then adds phase-specific
+scheduling to accelerate both prompt processing and autoregressive generation for a single request.
+For prefill, it turns one prompt into dependent sub-sequences that can occupy several pipeline
+stages concurrently. For decoding, it combines Medusa-style speculative decoding with an optional
+outline-based scheme that generates relatively independent answer sections in parallel. The paper
+reports up to a $26.1 times$ end-to-end latency reduction over its evaluated baselines.
 
 === Issues Addressed
 

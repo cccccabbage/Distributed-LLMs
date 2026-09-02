@@ -2,7 +2,7 @@
 
 === Summary
 
-MDI-LLM@macario_model-distributed_2025 is an edge-inference framework that distributes a
+MDI-LLM@macarioModelDistributedInferenceLarge2025 is an edge-inference framework that distributes a
 Transformer's consecutive layers across several resource-constrained devices. A starter node
 receives a prompt, performs embedding and output processing, and coordinates a recurrent path
 through the layer partitions; secondary nodes process their local layers and forward intermediate

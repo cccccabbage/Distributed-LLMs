@@ -2,11 +2,11 @@
 
 === Summary
 
-FedSpine@yao_efficient_2025 is a federated framework for fine-tuning and deploying LLMs on
-heterogeneous, resource-constrained devices. It combines frozen-base @background-lora[LoRA: Low-Rank
-  Adaptation] with client-side structured pruning: LoRA lowers the cost of adaptation, while pruning
-attention heads and feed-forward-network (FFN) channels reduces the deployed model's computation and
-memory footprint.
+FedSpine@yaoEfficientDeploymentLarge2025 is a federated framework for fine-tuning and deploying LLMs
+on heterogeneous, resource-constrained devices. It combines frozen-base @background-lora[LoRA:
+  Low-Rank Adaptation] with client-side structured pruning: LoRA lowers the cost of adaptation,
+while pruning attention heads and feed-forward-network (FFN) channels reduces the deployed model's
+computation and memory footprint.
 
 Its central contribution is to choose a pruning ratio and LoRA rank separately for each client in
 each federated round. The server uses Smooth Upper Confidence Bound (S-UCB), an online multi-armed

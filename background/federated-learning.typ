@@ -9,8 +9,8 @@ training.
 === Federated Averaging <background-fedavg>
 
 Federated Averaging (FedAvg) is the classic practical FL algorithm
-@mcmahan_communication-efficient_2023. Let client $k$ hold $n_k$ examples, let $n = sum_k n_k$, and
-let the server model at round $t$ be $w_t$. A round proceeds as follows:
+@mcmahanCommunicationEfficientLearningDeep2023. Let client $k$ hold $n_k$ examples, let
+$n = sum_k n_k$, and let the server model at round $t$ be $w_t$. A round proceeds as follows:
 
 1. The server selects available clients and broadcasts $w_t$.
 2. Each client runs local optimization for $E$ steps, producing $w_(t+1)^k$.

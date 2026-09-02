@@ -2,13 +2,13 @@
 
 === Summary
 
-Preble@srivatsa_preble_2025 is a distributed LLM-serving scheduler designed to reuse shared
-prompt-prefix KV caches across GPUs while avoiding cache-induced load hotspots. It targets
-long-context workloads in which many requests share documents, system prompts, tool descriptions, or
-conversation history, so recomputing the prefill phase for every request is costly. Its central E2
-(Exploitation and Exploration) policy selects between directing a request to an existing cache and
-distributing work to a less-loaded GPU. The evaluated results indicate that its benefits are
-strongest on workloads with substantial prefix sharing.
+Preble@srivatsaPrebleEfficientDistributed2025 is a distributed LLM-serving scheduler designed to
+reuse shared prompt-prefix KV caches across GPUs while avoiding cache-induced load hotspots. It
+targets long-context workloads in which many requests share documents, system prompts, tool
+descriptions, or conversation history, so recomputing the prefill phase for every request is costly.
+Its central E2 (Exploitation and Exploration) policy selects between directing a request to an
+existing cache and distributing work to a less-loaded GPU. The evaluated results indicate that its
+benefits are strongest on workloads with substantial prefix sharing.
 
 === Issues Addressed
 

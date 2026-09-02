@@ -3,13 +3,13 @@
 === Summary
 
 Byun and Lee study rank-heterogeneous federated LoRA, where selected clients train adapters with a
-higher rank than the remaining clients @byun_towards_2025. They identify conventional zero-padding
-as the cause of a harmful aggregation effect: dimensions that occur only in high-rank adapters are
-averaged with zeros from lower-rank clients and thus diluted. Their server-side replication-based
-padding copies the corresponding high-rank components into the padded portions of low-rank updates,
-preserving the high-rank signal during aggregation. In the reported DistilBERT and ALBERT text
-classification experiments, it converges faster than homogeneous and zero-padding baselines while
-retaining a low average communication cost.
+higher rank than the remaining clients @byunFederatedLowRankAdaptation2025. They identify
+conventional zero-padding as the cause of a harmful aggregation effect: dimensions that occur only
+in high-rank adapters are averaged with zeros from lower-rank clients and thus diluted. Their
+server-side replication-based padding copies the corresponding high-rank components into the padded
+portions of low-rank updates, preserving the high-rank signal during aggregation. In the reported
+DistilBERT and ALBERT text classification experiments, it converges faster than homogeneous and
+zero-padding baselines while retaining a low average communication cost.
 
 === Issues Addressed
 

@@ -2,14 +2,14 @@
 
 === Summary
 
-INTELLECT-2 @team_intellect-2_2025 trains a 32B-parameter reasoning model with reinforcement
-learning (RL) using a dynamic, geographically distributed pool of permissionless compute
-contributors. Rather than decentralizing the tightly coupled training update, the system separates
-independent rollout generation from centralized training: heterogeneous inference workers generate
-responses asynchronously, validators check submitted work, training workers perform GRPO updates,
-and updated policy weights are broadcast back to workers. The paper introduces PRIME-RL for this
-asynchronous workflow, TOPLOC for rollout verification, and SHARDCAST for weight dissemination; it
-also adapts the GRPO training recipe to tolerate stale rollouts and stabilize optimization. The
+INTELLECT-2 @teamINTELLECT2ReasoningModel2025 trains a 32B-parameter reasoning model with
+reinforcement learning (RL) using a dynamic, geographically distributed pool of permissionless
+compute contributors. Rather than decentralizing the tightly coupled training update, the system
+separates independent rollout generation from centralized training: heterogeneous inference workers
+generate responses asynchronously, validators check submitted work, training workers perform GRPO
+updates, and updated policy weights are broadcast back to workers. The paper introduces PRIME-RL for
+this asynchronous workflow, TOPLOC for rollout verification, and SHARDCAST for weight dissemination;
+it also adapts the GRPO training recipe to tolerate stale rollouts and stabilize optimization. The
 authors report that the resulting model improves on QwQ-32B in their evaluated reasoning setting.
 
 === Issues Addressed

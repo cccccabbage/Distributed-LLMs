@@ -4,14 +4,14 @@
 
 Dec-LoRA is a serverless approach to collaborative, parameter-efficient LLM fine-tuning. Clients
 keep their datasets local, train their own @background-lora[LoRA: Low-Rank Adaptation] factors, and
-exchange those factors only with neighbors in a communication graph @ghiasvand_decentralized_2025.
-Rather than introducing a central aggregation server, the method uses repeated local training and
-neighbor-weighted mixing.
+exchange those factors only with neighbors in a communication graph
+@ghiasvandDecentralizedLowRankFineTuning2025. Rather than introducing a central aggregation server,
+the method uses repeated local training and neighbor-weighted mixing.
 
 The paper evaluates Dec-LoRA on BERT and LLaMA-2, including heterogeneous-data and quantized-base
 settings. It reports performance comparable to centralized LoRA in its evaluated conditions and
 proves convergence to a stationary point for non-convex, smooth objectives under its stated
-assumptions @ghiasvand_decentralized_2025.
+assumptions @ghiasvandDecentralizedLowRankFineTuning2025.
 
 === Issues Addressed
 
@@ -56,7 +56,7 @@ The resulting factors seed the next local-training round. A sparse topology, suc
 each client's communication degree but spreads information more slowly; more connected graphs
 accelerate consensus at higher per-round communication cost. The convergence result has order
 $O(1 / sqrt(T))$ and is formulated through gradients with respect to the LoRA factors
-@ghiasvand_decentralized_2025.
+@ghiasvandDecentralizedLowRankFineTuning2025.
 
 The authors also evaluate Dec-LoRA with a 4-bit quantized frozen base model, relating it to the
 memory-saving setting described in @background-qlora[QLoRA: Quantized LoRA].

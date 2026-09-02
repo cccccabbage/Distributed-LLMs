@@ -6,7 +6,7 @@ SflLLM is a framework for fine-tuning language models from data held by resource
 devices. It combines split federated learning with @background-lora[LoRA]: clients run an early
 portion of a frozen base model and train lightweight adapters, while a main server executes the
 remaining, more expensive portion. A separate federated server aggregates the client-side adapters
-across clients @zhao_efficient_2025.
+across clients @zhaoEfficientSplitFederated2025.
 
 The paper's central systems contribution is to jointly choose wireless subchannels, transmit power,
 the model split point, and LoRA rank to minimize estimated *total* training latency to a target

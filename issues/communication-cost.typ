@@ -4,13 +4,14 @@ Collaborative model training repeatedly exchanges model parameters, gradients, o
 communication burden has two separate dimensions: the number of synchronization rounds and the size
 of each exchanged state. Frequent synchronization can require low-latency, high-bandwidth links,
 while a large model or update can make each exchange expensive even if rounds are sparse
-@mcmahan_communication-efficient_2023 @douillard_diloco_2024.
+@mcmahanCommunicationEfficientLearningDeep2023 @douillardDiLoCoDistributedLowCommunication2024.
 
 Methods can reduce the transmitted state, the synchronization frequency, or both.
 Parameter-efficient fine-tuning communicates adapters instead of the entire base model, as in FedIT
-and Dec-LoRA @zhang_towards_2024 @ghiasvand_decentralized_2025. DiLoCo instead performs many local
-optimizer steps before combining full-model displacements, reducing synchronization frequency but
-retaining model-sized exchanges @douillard_diloco_2024.
+and Dec-LoRA @zhangBuildingFederatedGPT2024 @ghiasvandDecentralizedLowRankFineTuning2025. DiLoCo
+instead performs many local optimizer steps before combining full-model displacements, reducing
+synchronization frequency but retaining model-sized exchanges
+@douillardDiLoCoDistributedLowCommunication2024.
 
 These choices introduce trade-offs. More local work lowers the number of communication rounds but
 can increase disagreement between participants; smaller or sparse communication topologies reduce

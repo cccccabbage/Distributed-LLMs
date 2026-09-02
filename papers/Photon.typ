@@ -2,15 +2,15 @@
 
 === Summary
 
-Photon@sani_photon_2025 studies cross-silo pre-training of decoder-only language models when GPU
-clusters and training data are geographically distributed. Instead of gradient synchronization at
-every optimization step, it applies the periodically averaged local-training pattern of
-@background-federated-learning[Federated Learning] to full-model pre-training. Its main finding is
-that small local batches, high local learning rates, and many local steps between aggregations can
-maintain strong language-modeling quality while greatly reducing cross-site communication. The
-authors demonstrate models from 125M to 7B parameters, reporting 64--512 times less communication
-than conventional distributed training and lower C4 validation perplexity than their corresponding
-centralized baselines in the reported 1.3B-, 3B-, and 7B-parameter experiments.
+Photon@saniPhotonFederatedLLM2025 studies cross-silo pre-training of decoder-only language models
+when GPU clusters and training data are geographically distributed. Instead of gradient
+synchronization at every optimization step, it applies the periodically averaged local-training
+pattern of @background-federated-learning[Federated Learning] to full-model pre-training. Its main
+finding is that small local batches, high local learning rates, and many local steps between
+aggregations can maintain strong language-modeling quality while greatly reducing cross-site
+communication. The authors demonstrate models from 125M to 7B parameters, reporting 64--512 times
+less communication than conventional distributed training and lower C4 validation perplexity than
+their corresponding centralized baselines in the reported 1.3B-, 3B-, and 7B-parameter experiments.
 
 === Issues Addressed
 

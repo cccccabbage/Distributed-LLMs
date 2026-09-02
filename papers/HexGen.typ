@@ -2,13 +2,13 @@
 
 === Summary
 
-HexGen@jiang_hexgen_2024 is a serving system for generative LLM inference across GPUs and network
-links with uneven compute performance, memory capacity, bandwidth, latency, and physical location.
-Its central contribution is asymmetric tensor and pipeline parallelism: rather than assigning an
-equal number of layers or an equal tensor-parallel (TP) degree to every pipeline stage, it assigns
-work in proportion to the capabilities of the selected hardware. HexGen searches for a
-memory-feasible deployment that maximizes the proportion of requests meeting a latency service-level
-objective (SLO).
+HexGen@jiangHexGenGenerativeInference2024 is a serving system for generative LLM inference across
+GPUs and network links with uneven compute performance, memory capacity, bandwidth, latency, and
+physical location. Its central contribution is asymmetric tensor and pipeline parallelism: rather
+than assigning an equal number of layers or an equal tensor-parallel (TP) degree to every pipeline
+stage, it assigns work in proportion to the capabilities of the selected hardware. HexGen searches
+for a memory-feasible deployment that maximizes the proportion of requests meeting a latency
+service-level objective (SLO).
 
 The paper evaluates service of Llama-2 70B and reports that, for the same budget, HexGen can meet
 latency deadlines up to $2.3 times$ lower or tolerate request rates up to $4 times$ higher than its

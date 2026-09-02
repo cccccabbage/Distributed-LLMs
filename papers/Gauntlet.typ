@@ -2,14 +2,14 @@
 
 === Summary
 
-Gauntlet@lidin_incentivizing_2025 is an incentive and validation mechanism for synchronous,
-permissionless distributed training of foundation models. Rather than requiring anonymous peers to
-prove that they followed an identical prescribed training procedure, validators assess whether each
-submitted compressed update improves model loss and reward peers accordingly. The mechanism combines
-fast reliability and synchronization checks, a longer-term OpenSkill quality rating, and a
-statistical check intended to distinguish unique computation from copied updates. The authors
-deployed it on Bittensor and report a live training run of a 1.2B-parameter LLM whose per-iteration
-quality was competitive with their centralized baselines.
+Gauntlet@lidinIncentivizingPermissionlessDistributed2025 is an incentive and validation mechanism
+for synchronous, permissionless distributed training of foundation models. Rather than requiring
+anonymous peers to prove that they followed an identical prescribed training procedure, validators
+assess whether each submitted compressed update improves model loss and reward peers accordingly.
+The mechanism combines fast reliability and synchronization checks, a longer-term OpenSkill quality
+rating, and a statistical check intended to distinguish unique computation from copied updates. The
+authors deployed it on Bittensor and report a live training run of a 1.2B-parameter LLM whose
+per-iteration quality was competitive with their centralized baselines.
 
 === Issues Addressed
 

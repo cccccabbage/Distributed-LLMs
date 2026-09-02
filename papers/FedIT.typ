@@ -3,11 +3,11 @@
 === Summary
 
 FedIT is a framework for instruction-tuning a large language model using instruction data
-distributed across users or organizations without centralizing the raw data @zhang_towards_2024. It
-combines @background-federated-learning[Federated Learning] with @background-lora[LoRA: Low-Rank
-  Adaptation]: clients train lightweight adapters locally, and a server aggregates those adapters
-into a shared global adapter. Its contribution is a decentralized training framework rather than a
-new language-model architecture.
+distributed across users or organizations without centralizing the raw data
+@zhangBuildingFederatedGPT2024. It combines @background-federated-learning[Federated Learning] with
+@background-lora[LoRA: Low-Rank Adaptation]: clients train lightweight adapters locally, and a
+server aggregates those adapters into a shared global adapter. Its contribution is a decentralized
+training framework rather than a new language-model architecture.
 
 === Issues Addressed
 
@@ -54,7 +54,7 @@ $B in RR^(d times r)$, and $r << d$. This changes the trainable parameter count 
 $d^2$ to $2 d r$ for a square $d times d$ matrix, making local optimization and update exchange more
 manageable. FedIT treats client heterogeneity as both an optimization difficulty and a potential
 source of useful instruction diversity. The paper leaves more advanced selection, aggregation,
-personalization, and PEFT choices as extensions of the framework @zhang_towards_2024.
+personalization, and PEFT choices as extensions of the framework @zhangBuildingFederatedGPT2024.
 
 === Pros and Cons
 

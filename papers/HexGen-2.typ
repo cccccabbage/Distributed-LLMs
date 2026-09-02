@@ -2,11 +2,11 @@
 
 === Summary
 
-HexGen-2@jiang_hexgen-2_2025 serves LLMs on heterogeneous GPU clusters by disaggregating the prefill
-and decode phases described in @background-prefill-decode-kv-cache[Prefill, Decode, and the
-  Key-Value Cache]. The system assigns those phases to separate replicas, transfers the KV cache
-between them, and jointly selects their heterogeneous hardware placement, parallelism, and request
-routing.
+HexGen-2@jiangHexGen2DisaggregatedGenerative2025 serves LLMs on heterogeneous GPU clusters by
+disaggregating the prefill and decode phases described in
+@background-prefill-decode-kv-cache[Prefill, Decode, and the Key-Value Cache]. The system assigns
+those phases to separate replicas, transfers the KV cache between them, and jointly selects their
+heterogeneous hardware placement, parallelism, and request routing.
 
 Its optimizer combines graph partitioning, maximum-flow analysis, and maximum-flow-guided iterative
 refinement to maximize throughput while respecting compute, memory, network, and KV-transfer

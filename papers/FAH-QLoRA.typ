@@ -2,10 +2,10 @@
 
 === Summary
 
-FAH-QLoRA@gao_federated_nodate is a federated framework for fine-tuning large language models on
-devices with unequal compute, memory, and communication resources. It combines a quantized frozen
-base model with LoRA adapters, then adapts the federation's average LoRA rank across rounds and
-assigns clients different ranks within each round. This seeks to reduce memory use and the
+FAH-QLoRA@gaoFederatedAdaptiveFineTuning is a federated framework for fine-tuning large language
+models on devices with unequal compute, memory, and communication resources. It combines a quantized
+frozen base model with LoRA adapters, then adapts the federation's average LoRA rank across rounds
+and assigns clients different ranks within each round. This seeks to reduce memory use and the
 slowest-client delay without giving every client the same adapter workload. The paper reports up to
 45.86 percent lower training time and 44.15 percent lower memory use than its baselines.
 

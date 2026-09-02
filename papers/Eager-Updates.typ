@@ -2,13 +2,14 @@
 
 === Summary
 
-Eager Updates extends DiLoCo @douillard_diloco_2024 for training across poorly connected workers,
-such as separate data centers. Although DiLoCo communicates only after a block of local
-optimization, its usual outer update remains a blocking synchronization point. Eager Updates
-overlaps that communication with the next local-training block. When the delayed aggregate becomes
-available, each worker replaces its stale local contribution with its newly computed one before
-applying the outer update. The authors report performance competitive with ordinary DiLoCo in
-low-bandwidth settings, while avoiding most of the communication wait @kale_eager_2025.
+Eager Updates extends DiLoCo @douillardDiLoCoDistributedLowCommunication2024 for training across
+poorly connected workers, such as separate data centers. Although DiLoCo communicates only after a
+block of local optimization, its usual outer update remains a blocking synchronization point. Eager
+Updates overlaps that communication with the next local-training block. When the delayed aggregate
+becomes available, each worker replaces its stale local contribution with its newly computed one
+before applying the outer update. The authors report performance competitive with ordinary DiLoCo in
+low-bandwidth settings, while avoiding most of the communication wait
+@kaleEagerUpdatesOverlapped2025.
 
 === Issues Addressed
 

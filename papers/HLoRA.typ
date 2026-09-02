@@ -2,7 +2,7 @@
 
 === Summary
 
-HLoRA@liu_hlora_2025 is a federated fine-tuning method that lets clients train
+HLoRA@liuHLoRAEfficientFederated2025 is a federated fine-tuning method that lets clients train
 @background-lora[LoRA: Low-Rank Adaptation] adapters at different ranks. Its central idea is to
 reconstruct each client's dense LoRA update before aggregation, then factorize the aggregated update
 with singular value decomposition (SVD) to redistribute rank-appropriate adapters. This avoids

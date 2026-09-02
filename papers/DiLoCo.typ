@@ -2,12 +2,12 @@
 
 === Summary
 
-DiLoCo is a distributed optimization method for training language models across several poorly
-connected clusters. It periodically combines models that have each trained independently for many
-steps, rather than synchronizing gradients after every step. The paper frames the method as a
-variant of @background-federated-learning[Federated Learning] with a large local-update interval: on
-C4, its eight-worker configuration matched fully synchronous optimization while communicating 500
-times less often.
+DiLoCo@douillardDiLoCoDistributedLowCommunication2024 is a distributed optimization method for
+training language models across several poorly connected clusters. It periodically combines models
+that have each trained independently for many steps, rather than synchronizing gradients after every
+step. The paper frames the method as a variant of @background-federated-learning[Federated Learning]
+with a large local-update interval: on C4, its eight-worker configuration matched fully synchronous
+optimization while communicating 500 times less often.
 
 === Issues Addressed
 

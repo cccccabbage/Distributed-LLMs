@@ -5,7 +5,8 @@ but it also removes the assumption that every submitted result was produced by t
 data, hardware configuration, and procedure. A participant may submit malformed, stale, copied,
 low-quality, or deliberately harmful work while seeking aggregation influence or rewards. This
 threat model applies whether the contribution is a local model update, gradient-like signal, or
-inference rollout @lidin_incentivizing_2025 @team_intellect-2_2025.
+inference rollout @lidinIncentivizingPermissionlessDistributed2025
+@teamINTELLECT2ReasoningModel2025.
 
 Defenses usually combine inexpensive admissibility checks with a more costly assessment of value or
 provenance. Admissibility checks can verify timely arrival, schema, model version, or basic output

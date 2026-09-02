@@ -5,7 +5,7 @@ KV-cache memory, and network-link capacity. A full model may not fit on a single
 but dividing it across devices introduces activation transfers between consecutive model stages.
 Consequently, adding a device is not automatically beneficial: its additional compute or memory must
 outweigh both the communication it introduces and the risk that its stage becomes a pipeline
-bottleneck @zhang_edgeshard_2024 @mei_helix_2025.
+bottleneck @zhangEdgeShardEfficientLLM2024 @meiHelixServingLarge2025.
 
 Model placement, routing, and scheduling are therefore coupled decisions. A placement must satisfy
 memory constraints, preserve the model's layer order, and account for the execution rate of each

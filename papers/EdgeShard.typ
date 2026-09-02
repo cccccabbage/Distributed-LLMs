@@ -2,14 +2,14 @@
 
 === Summary
 
-EdgeShard@zhang_edgeshard_2024 is a distributed-inference framework that runs a large language model
-(LLM) across heterogeneous edge devices and, when beneficial, cloud resources. Rather than placing a
-full model on one device, it assigns consecutive groups of Transformer layers to selected devices.
-Its central contribution is jointly choosing the participating devices and layer partitions with
-objectives for either single-request latency or pipeline throughput. In a physical prototype with
-NVIDIA Jetson devices and an RTX 3090 server, the authors report up to 50% lower inference latency
-and up to a $2 times$ throughput improvement over their evaluated baselines, including for models
-too large for a single tested edge device.
+EdgeShard@zhangEdgeShardEfficientLLM2024 is a distributed-inference framework that runs a large
+language model (LLM) across heterogeneous edge devices and, when beneficial, cloud resources. Rather
+than placing a full model on one device, it assigns consecutive groups of Transformer layers to
+selected devices. Its central contribution is jointly choosing the participating devices and layer
+partitions with objectives for either single-request latency or pipeline throughput. In a physical
+prototype with NVIDIA Jetson devices and an RTX 3090 server, the authors report up to 50% lower
+inference latency and up to a $2 times$ throughput improvement over their evaluated baselines,
+including for models too large for a single tested edge device.
 
 === Issues Addressed
 

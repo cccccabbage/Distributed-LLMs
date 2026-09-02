@@ -4,7 +4,7 @@ Federated and decentralized learning commonly operate on non-independent and ide
 (non-IID) client data. Clients may differ in domain, task, language, label distribution, data
 volume, or style. These differences can be useful: together they can broaden the knowledge and
 capabilities represented in the shared model. They also mean that clients optimize different local
-objectives @zhang_towards_2024 @ghiasvand_decentralized_2025.
+objectives @zhangBuildingFederatedGPT2024 @ghiasvandDecentralizedLowRankFineTuning2025.
 
 When clients perform several local updates before communicating, their parameters can move in
 different directions, a phenomenon usually called client drift. Aggregating these divergent updates
@@ -15,4 +15,4 @@ In decentralized systems, the communication graph adds a second source of disagr
 poorly connected graphs limit per-client communication, but information and model changes propagate
 slowly; more connected graphs improve consensus while increasing communication cost. The practical
 choice of local-update count, aggregation rule, and network topology therefore trades communication
-against consensus and accuracy @ghiasvand_decentralized_2025.
+against consensus and accuracy @ghiasvandDecentralizedLowRankFineTuning2025.

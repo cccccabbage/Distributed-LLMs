@@ -1,8 +1,8 @@
 == LoRA: Low-Rank Adaptation <background-lora>
 
 LoRA is a parameter-efficient fine-tuning (PEFT) method that freezes a pretrained model and trains
-small adapter parameters instead of updating all model weights @hu_lora_2021. For a layer with
-weight matrix $W$, it represents the learned update with two low-rank matrices:
+small adapter parameters instead of updating all model weights @huLoRALowRankAdaptation2021. For a
+layer with weight matrix $W$, it represents the learned update with two low-rank matrices:
 
 $
   W' = W + (alpha / r) B A.
@@ -17,7 +17,8 @@ million values for a dense update.
 LoRA lowers training-memory requirements and produces small, portable adapter files. A merged
 adapter can add little or no inference latency. The original paper reported up to $10,000$ times
 fewer trainable parameters and roughly three times lower GPU memory use than full fine-tuning for
-GPT-3; these are results for the tested settings, not universal guarantees @hu_lora_2021.
+GPT-3; these are results for the tested settings, not universal guarantees
+@huLoRALowRankAdaptation2021.
 
 Important choices include the rank, scaling factor, target modules, and dropout. Larger ranks offer
 more capacity but consume more memory and storage. Attention projections are common targets, though

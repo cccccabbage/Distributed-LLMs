@@ -2,9 +2,9 @@
 
 === Summary
 
-Helix@mei_helix_2025 is an LLM-serving system for GPU clusters whose compute capacity, memory, and
-network links are heterogeneous. It treats inference throughput as flow through a graph: GPU
-processing and inter-GPU links impose capacities, while a request's model-layer order restricts
+Helix@meiHelixServingLarge2025 is an LLM-serving system for GPU clusters whose compute capacity,
+memory, and network links are heterogeneous. It treats inference throughput as flow through a graph:
+GPU processing and inter-GPU links impose capacities, while a request's model-layer order restricts
 which transitions are valid. Helix jointly selects a model-layer placement and traffic distribution
 with a mixed-integer linear program (MILP), then converts the resulting continuous flow into
 discrete, per-request pipelines using Interleaved Weighted Round-Robin (IWRR) scheduling.

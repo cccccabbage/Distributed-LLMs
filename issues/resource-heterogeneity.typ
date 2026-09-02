@@ -17,4 +17,4 @@ Client-specific configurations can also create incompatible parameter shapes, so
 mechanism must define a compatible representation rather than assume directly averageable updates.
 Choosing the configuration itself remains a resource-allocation problem: it must decide which
 capacity each client should receive while balancing system efficiency and learning quality
-@liu_hlora_2025 @yao_efficient_2025.
+@liuHLoRAEfficientFederated2025 @yaoEfficientDeploymentLarge2025.
