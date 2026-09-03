@@ -54,6 +54,7 @@
 #include "papers/Photon.typ"
 #include "papers/Seesaw.typ"
 #include "papers/SPADA.typ"
+#include "papers/ThunderServe.typ"
 
 = References
 
