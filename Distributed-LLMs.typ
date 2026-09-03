@@ -53,6 +53,7 @@
 #include "papers/MDI-LLM.typ"
 #include "papers/Photon.typ"
 #include "papers/Seesaw.typ"
+#include "papers/SPADA.typ"
 
 = References
 

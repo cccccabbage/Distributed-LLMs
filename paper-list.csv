@@ -17,7 +17,7 @@ Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs 
 Model-Distributed Inference for Large Language Models at the Edge (MDI-LLM),https://arxiv.org/abs/2505.18164,May-25,Yes
 Photon: Federated LLM Pre-Training,https://proceedings.mlsys.org/paper_files/paper/2025/hash/185087ea328b4f03ea8fd0c8aa96f747-Abstract-Conference.html,May-25,Yes
 Seesaw: High-throughput LLM Inference via Model Re-sharding,https://proceedings.mlsys.org/paper_files/paper/2025/hash/cbc4ab80cd77aa0eb87da062fbcddb46-Abstract-Conference.html,May-25,Yes
-"SPADA: Secure, Performant, and Distributed LLM Inference",https://openreview.net/forum?id=1FcjLaDk33,May-25,No
+"SPADA: Secure, Performant, and Distributed LLM Inference",https://openreview.net/forum?id=1FcjLaDk33,May-25,Yes
 ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environments,https://arxiv.org/abs/2502.09334,May-25,No
 FLAME: Towards Federated Fine-Tuning LLMs Through Adaptive SMoE,https://arxiv.org/abs/2506.16600,Jun-25,No
 SiPipe: Bridging the CPU-GPU Utilization Gap for Efficient Pipeline-Parallel LLM Inference,https://arxiv.org/abs/2506.22033,Jun-25,No
