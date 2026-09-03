@@ -52,6 +52,7 @@
 #include "papers/Jupiter.typ"
 #include "papers/MDI-LLM.typ"
 #include "papers/Photon.typ"
+#include "papers/Seesaw.typ"
 
 = References
 
