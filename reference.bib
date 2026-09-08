@@ -263,6 +263,23 @@
   keywords = {AI,Federated Learning,LLM}
 }
 
+@misc{leFLAMEFederatedFineTuning2025,
+  title = {{{FLAME}}: {{Towards Federated Fine-Tuning Large Language Models Through Adaptive SMoE}}},
+  shorttitle = {{{FLAME}}},
+  author = {Le, Khiem and Tran, Tuan and Hua, Ting and Chawla, Nitesh V.},
+  year = 2025,
+  month = jul,
+  number = {arXiv:2506.16600},
+  eprint = {2506.16600},
+  primaryclass = {cs.LG},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.16600},
+  urldate = {2026-09-07},
+  abstract = {Existing resource-adaptive LoRA federated fine-tuning methods enable clients to fine-tune models using compressed versions of global LoRA matrices, in order to accommodate various compute resources across clients. This compression requirement will lead to suboptimal performance due to information loss. To address this, we propose FLAME, a novel federated learning framework based on the Sparse Mixture-of-Experts (SMoE) architecture. Unlike prior approaches, FLAME retains full (uncompressed) global LoRA matrices and achieves client-side adaptability by varying the number of activated experts per client. However, incorporating SMoE into federated learning introduces unique challenges, specifically, the mismatch in output magnitude from partial expert activation and the imbalance in expert training quality across clients. FLAME tackles these challenges through a lightweight rescaling mechanism and an activation-aware aggregation scheme. Empirical results across diverse computational settings demonstrate that FLAME consistently outperforms existing methods, providing a robust and effective solution for resource-adaptive federated learning.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
 @misc{lidinIncentivizingPermissionlessDistributed2025,
   title = {Incentivizing {{Permissionless Distributed Learning}} of {{LLMs}}},
   author = {Lidin, Joel and Sarfi, Amir and Pappas, Evangelos and Dare, Samuel and Belilovsky, Eugene and Steeves, Jacob},
