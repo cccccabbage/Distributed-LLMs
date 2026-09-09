@@ -57,6 +57,7 @@
 #include "papers/ThunderServe.typ"
 #include "papers/FLAME.typ"
 #include "papers/SiPipe.typ"
+#include "papers/AssyLLM.typ"
 
 = References
 
