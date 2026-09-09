@@ -133,6 +133,23 @@
   keywords = {AI,Federated Learning,LLM}
 }
 
+@misc{heSiPipeBridgingCPUGPU2025,
+  title = {{{SiPipe}}: {{Bridging}} the {{CPU-GPU Utilization Gap}} for {{Efficient Pipeline-Parallel LLM Inference}}},
+  shorttitle = {{{SiPipe}}},
+  author = {He, Yongchao and Zhao, Bohan and Cao, Zheng},
+  year = 2025,
+  month = jun,
+  number = {arXiv:2506.22033},
+  eprint = {2506.22033},
+  primaryclass = {cs.DC},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.22033},
+  urldate = {2026-09-09},
+  abstract = {As inference workloads for large language models (LLMs) scale to meet growing user demand, pipeline parallelism (PP) has become a widely adopted strategy for multi-GPU deployment, particularly in cross-node setups, to improve key-value (KV) cache capacity and inference throughput. However, PP suffers from inherent inefficiencies caused by three types of execution bubbles-load-imbalance, intra-stage, and inter-stage-which limit pipeline saturation. We present SiPipe, a heterogeneous pipeline design that improves throughput by leveraging underutilized CPU resources to offload auxiliary computation and communication. SiPipe incorporates three key techniques-CPU sampling, a token-safe execution model, and structure-aware transmission-to mitigate pipeline bubbles and improve execution efficiency. Across diverse LLMs, SiPipe achieves up to 2.1 times higher throughput, 43\% lower per-token latency, and up to 23\% higher average GPU utilization compared to the state-of-the-art vLLM under the same PP configuration, demonstrating its generality across LLMs and deployment scenarios.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Distributed Parallel and Cluster Computing}
+}
+
 @misc{huLoRALowRankAdaptation2021,
   title = {{{LoRA}}: {{Low-Rank Adaptation}} of {{Large Language Models}}},
   shorttitle = {{{LoRA}}},
