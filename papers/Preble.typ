@@ -14,13 +14,10 @@ benefits are strongest on workloads with substantial prefix sharing.
 
 Preble builds on the prefill, decode, and cache-locality trade-offs described in
 @background-prefill-decode-kv-cache[Prefill, Decode, and the Key-Value Cache]. Its particular
-workload contains long inputs and short outputs, so repeated prefill is costly. Although a cached
-shared prefix can eliminate much of this repeated work, a conventional load balancer may route
-requests with the same prefix to different GPUs. Each GPU then recomputes and stores a separate
-copy, losing cache locality.
-
-Always routing a request to the GPU holding its longest cached prefix is also insufficient: a
-popular prefix can turn that GPU into a hotspot. Preble therefore frames distributed prompt
+workload contains long inputs and short outputs, so repeated prefill is costly. Shared prefixes from
+documents, system prompts, tool descriptions, or conversation history make cache reuse valuable, but
+routing then faces the locality-versus-load trade-off in @issue-cache-locality-load[Cache Locality
+  versus Load Balancing in Distributed Serving]. Preble therefore frames distributed prompt
 scheduling as a trade-off between cache reuse, computational load, cache capacity and eviction, and
 request fairness. This is a serving-efficiency problem rather than a federated-training or formal
 data-privacy mechanism.
@@ -50,8 +47,9 @@ lower-priority groups are periodically scheduled.
 
 ==== Pros
 
-- The scheduler directly combines prefix-cache locality with load balancing, rather than treating
-  them as independent decisions.
+- The E2 policy instantiates @issue-cache-locality-load[Cache Locality versus Load Balancing in
+    Distributed Serving] by choosing between cache exploitation and load exploration, rather than
+  treating locality and load as independent decisions.
 - It is well matched to long-context applications with repeated prefixes, including document QA,
   retrieval-augmented generation, tool use, and multi-turn conversations.
 - Dynamic load shifting and prefix replication allow the system to respond to changing prefix
@@ -70,8 +68,8 @@ lower-priority groups are periodically scheduled.
 - Cost estimates based on token counts, recent load, cache state, and expected output length can be
   inaccurate for unpredictable requests, producing suboptimal routing decisions.
 - Maintaining a global radix tree, cache-location mappings, popularity information, and load
-  statistics increases coordination complexity; the centralized scheduler may itself become a
-  scalability concern at much larger cluster sizes.
+  statistics increases coordination complexity, instantiating the centralized-scheduler concern in
+  @issue-cache-locality-load[Cache Locality versus Load Balancing in Distributed Serving].
 - Prefix autoscaling trades load balance for GPU memory: replicas consume KV-cache capacity and can
   evict other reusable prefixes.
 - The supplied notes describe evaluations on selected workloads and configurations; performance in
