@@ -22,7 +22,7 @@ ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environme
 FLAME: Towards Federated Fine-Tuning LLMs Through Adaptive SMoE,https://arxiv.org/abs/2506.16600,Jun-25,Yes
 SiPipe: Bridging the CPU-GPU Utilization Gap for Efficient Pipeline-Parallel LLM Inference,https://arxiv.org/abs/2506.22033,Jun-25,Yes
 AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks,https://www.usenix.org/conference/atc25/presentation/zhan,Jul-25,Yes
-CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training,https://www.usenix.org/conference/atc25/presentation/chen-tiancheng,Jul-25,No
+CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training,https://www.usenix.org/conference/atc25/presentation/chen-tiancheng,Jul-25,Yes
 Decentralized Low-Rank Fine-Tuning of Large Language Models (Dec-LoRA),https://aclanthology.org/2025.realm-1.24/,Jul-25,Yes
 DEEPSERVE: Serverless Large Language Model Serving at Scale,https://www.usenix.org/conference/atc25/presentation/hu-junhao,Jul-25,No
 FedEx-LoRA: Exact Aggregation for Federated and Efficient Fine-Tuning of Large Language Models,https://aclanthology.org/2025.acl-long.67/,Jul-25,No

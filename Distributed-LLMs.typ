@@ -58,6 +58,7 @@
 #include "papers/FLAME.typ"
 #include "papers/SiPipe.typ"
 #include "papers/AssyLLM.typ"
+#include "papers/CrossPipe.typ"
 
 = References
 
