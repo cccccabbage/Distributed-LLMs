@@ -418,6 +418,23 @@
   langid = {english}
 }
 
+@misc{singhalFedExLoRAExactAggregation2025,
+  title = {{{FedEx-LoRA}}: {{Exact Aggregation}} for {{Federated}} and {{Efficient Fine-Tuning}} of {{Foundation Models}}},
+  shorttitle = {{{FedEx-LoRA}}},
+  author = {Singhal, Raghav and Ponkshe, Kaustubh and Vepakomma, Praneeth},
+  year = 2025,
+  month = jun,
+  number = {arXiv:2410.09432},
+  eprint = {2410.09432},
+  primaryclass = {cs.DC},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2410.09432},
+  urldate = {2026-09-11},
+  abstract = {Low-Rank Adaptation (LoRA) is a popular technique for efficient fine-tuning of foundation models. However, applying LoRA in federated learning environments, where data is distributed across multiple clients, presents unique challenges. Existing methods rely on traditional federated averaging of LoRA adapters, resulting in inexact updates. To address this, we propose Federated Exact LoRA, or FedEx-LoRA, which adds a residual error term to the pretrained frozen weight matrix. Our approach achieves exact updates with minimal computational and communication overhead, preserving LoRA's efficiency. We evaluate the method on various models across arithmetic reasoning, commonsense reasoning, natural language understanding and natural language generation tasks, showing consistent performance gains over state-of-the-art methods across multiple settings. Through extensive analysis, we quantify that the deviations in updates from the ideal solution are significant, highlighting the need for exact aggregation. Our method's simplicity, efficiency, and broad applicability position it as a promising solution for accurate and effective federated fine-tuning of foundation models. Our code is publicly available at https://github.com/RaghavSinghal10/fedex-lora.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Distributed Parallel and Cluster Computing}
+}
+
 @article{srivatsaPrebleEfficientDistributed2025,
   title = {Preble: {{Efficient Distributed Prompt Scheduling}} for {{LLM Serving}}},
   shorttitle = {Preble},

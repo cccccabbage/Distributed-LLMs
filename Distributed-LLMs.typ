@@ -31,6 +31,7 @@
 #include "issues/privacy-leakage.typ"
 #include "issues/untrusted-permissionless-compute.typ"
 #include "issues/asynchronous-update-staleness.typ"
+#include "issues/lora-aggregation-mismatch.typ"
 
 = Papers
 
@@ -45,6 +46,7 @@
 #include "papers/HLoRA.typ"
 #include "papers/Rank-Heterogeneity.typ"
 #include "papers/FAH-QLoRA.typ"
+#include "papers/FedEx-LoRA.typ"
 #include "papers/Preble.typ"
 #include "papers/EdgeShard.typ"
 #include "papers/SflLLM.typ"

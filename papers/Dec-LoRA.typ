@@ -24,17 +24,12 @@ The communication constraints summarized in @issue-communication-cost[Communicat
   Adaptation]. For rank $r$, this reduces the state transferred per adapted layer from a dense
 update to roughly $O((d_1 + d_2) r)$.
 
-The paper also addresses an optimization complication specific to LoRA. If client $i$ has factors
-$A_i$ and $B_i$, separately averaging them generally does not produce the average dense update:
-
-$
-  (1 / n sum_i B_i) (1 / n sum_i A_i) != 1 / n sum_i B_i A_i.
-$
-
-Its analysis therefore works directly with the two factors. The local-update drift, imperfect
-consensus, and graph-connectivity trade-offs are discussed in @issue-data-heterogeneity[Data
-  Heterogeneity and Client Drift]. Exchanged adapter parameters retain the privacy risks summarized
-in @issue-privacy-leakage[Privacy Leakage Beyond Data Locality].
+The paper also addresses the @issue-lora-aggregation-mismatch[LoRA Factor/Product Aggregation
+  Mismatch]: its analysis works directly with the two factors rather than assuming that averaged
+factors reproduce an averaged dense update. The local-update drift, imperfect consensus, and
+graph-connectivity trade-offs are discussed in @issue-data-heterogeneity[Data Heterogeneity and
+  Client Drift]. Exchanged adapter parameters retain the privacy risks summarized in
+@issue-privacy-leakage[Privacy Leakage Beyond Data Locality].
 
 === Method
 

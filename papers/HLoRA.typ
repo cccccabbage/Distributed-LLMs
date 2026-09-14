@@ -5,8 +5,9 @@
 HLoRA@liuHLoRAEfficientFederated2025 is a federated fine-tuning method that lets clients train
 @background-lora[LoRA: Low-Rank Adaptation] adapters at different ranks. Its central idea is to
 reconstruct each client's dense LoRA update before aggregation, then factorize the aggregated update
-with singular value decomposition (SVD) to redistribute rank-appropriate adapters. This avoids
-averaging LoRA factors independently, which does not in general equal averaging their products.
+with singular value decomposition (SVD) to redistribute rank-appropriate adapters. This avoids the
+aggregation mismatch described in @issue-lora-aggregation-mismatch[LoRA Factor/Product Aggregation
+  Mismatch].
 
 On RoBERTa-large fine-tuned for MRPC, RTE, and QQP with 100 simulated clients, the paper reports
 that its heterogeneous configuration outperforms its homogeneous HLoRA and naive federated-LoRA
@@ -21,8 +22,8 @@ not add a protection mechanism.
 
 The paper instantiates @issue-resource-heterogeneity[Resource Heterogeneity and Configuration
   Adaptation] through a client-specific LoRA rank. Allowing ranks to differ creates factor matrices
-with incompatible shapes. It also exposes an aggregation bias: independently averaging client
-factors combines factors that no single client jointly trained.
+with incompatible shapes, and combining the trained factors into one shared model runs into the
+@issue-lora-aggregation-mismatch[LoRA Factor/Product Aggregation Mismatch].
 
 === Method
 
@@ -41,15 +42,9 @@ $
 $
 
 where $n_k$ is client $k$'s sample count and $n$ is the total participating sample count. Every
-reconstructed update has the layer's dense shape regardless of $r_k$. In contrast, separately
-averaging the factors would produce
-
-$
-  (sum_k p_k B_k) (sum_k p_k A_k),
-$
-
-which includes cross-client products such as $B_1 A_2$ and therefore generally differs from
-$sum_k p_k B_k A_k$.
+reconstructed update has the layer's dense shape regardless of $r_k$, so aggregation sidesteps the
+mismatch described in @issue-lora-aggregation-mismatch[LoRA Factor/Product Aggregation Mismatch]
+instead of averaging the factors separately.
 
 The server decomposes the global update as $Delta W_("global") = U Sigma V^T$. For a client with
 target rank $r_k$, it retains the leading $r_k$ singular components and forms, for example,

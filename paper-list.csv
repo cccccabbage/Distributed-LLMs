@@ -25,7 +25,7 @@ AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Bloc
 CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training,https://www.usenix.org/conference/atc25/presentation/chen-tiancheng,Jul-25,Yes
 Decentralized Low-Rank Fine-Tuning of Large Language Models (Dec-LoRA),https://aclanthology.org/2025.realm-1.24/,Jul-25,Yes
 DEEPSERVE: Serverless Large Language Model Serving at Scale,https://www.usenix.org/conference/atc25/presentation/hu-junhao,Jul-25,Yes
-FedEx-LoRA: Exact Aggregation for Federated and Efficient Fine-Tuning of Large Language Models,https://aclanthology.org/2025.acl-long.67/,Jul-25,No
+FedEx-LoRA: Exact Aggregation for Federated and Efficient Fine-Tuning of Large Language Models,https://aclanthology.org/2025.acl-long.67/,Jul-25,Yes
 FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference,https://arxiv.org/abs/2507.02620,Jul-25,No
 HALoS: Hierarchical Asynchronous Local SGD over Slow Networks for Geo-Distributed Large Language Model Training,https://proceedings.mlr.press/v267/kim25y.html,Jul-25,No
 Idle No More: Boosting Distributed Pipeline Training via FluidPipe,https://repository.kaust.edu.sa/items/bc117621-9afd-4868-852a-19535837273e,Jul-25,No
