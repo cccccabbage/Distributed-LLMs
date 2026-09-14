@@ -14,6 +14,7 @@ fit on one tested device but could execute when its layers were distributed acro
 
 === Issues Addressed
 
+@issue-pipeline-bubbles-utilization[Pipeline Bubbles and Stage Utilization in Distributed Inference]
 The paper instantiates @issue-inference-resource-heterogeneity[Distributed-Inference Resource
   Heterogeneity and Model Placement] for low-power edge devices. Its immediate constraint is that a
 single device may not have enough memory to hold an LLM, whereas assigning consecutive layer groups
@@ -21,11 +22,10 @@ to several devices pools their available memory. The paper contrasts this with d
 which still requires every participant to store a full model, and tensor parallelism, which needs
 frequent synchronization that may be impractical on edge links.
 
-Layer partitioning alone does not solve utilization during the decode phase described in
-@background-prefill-decode-kv-cache[Prefill, Decode, and the Key-Value Cache]. A single request must
-complete a full causal model pass before its next token can begin, leaving other pipeline stages
-idle. MDI-LLM specifically seeks higher aggregate throughput for several independent generation
-requests; it does not remove the per-request sequential dependency between output tokens.
+MDI-LLM specifically applies the shared utilization issue to several independent generation
+requests: recurrent pipelining seeks aggregate throughput, while its per-request sequential token
+dependency remains governed by @background-prefill-decode-kv-cache[Prefill, Decode, and the
+  Key-Value Cache].
 
 === Method
 

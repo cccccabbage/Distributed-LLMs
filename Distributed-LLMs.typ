@@ -27,6 +27,7 @@
 #include "issues/communication-cost.typ"
 #include "issues/resource-heterogeneity.typ"
 #include "issues/inference-resource-heterogeneity.typ"
+#include "issues/pipeline-bubbles-utilization.typ"
 #include "issues/cache-locality-load.typ"
 #include "issues/privacy-leakage.typ"
 #include "issues/untrusted-permissionless-compute.typ"
@@ -63,6 +64,7 @@
 #include "papers/AssyLLM.typ"
 #include "papers/CrossPipe.typ"
 #include "papers/DeepServe.typ"
+#include "papers/FlowSpec.typ"
 
 = References
 

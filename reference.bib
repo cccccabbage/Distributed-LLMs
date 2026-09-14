@@ -339,6 +339,19 @@
   langid = {english}
 }
 
+@misc{liuFlowSpecContinuousPipelined2025,
+  title = {{{FlowSpec}}: {{Continuous Pipelined Speculative Decoding}} for {{Efficient Distributed LLM Inference}}},
+  shorttitle = {{{FlowSpec}}},
+  author = {Liu, Xing and Luo, Lizhuo and Tang, Ming and Huang, Chao and Chen, Xu},
+  year = 2025,
+  month = jul,
+  journal = {arXiv.org},
+  urldate = {2026-09-14},
+  abstract = {Distributed inference serves as a promising approach to enabling the inference of large language models (LLMs) at the network edge. It distributes the inference process to multiple devices to ensure that the LLMs can fit into the device memory. Recent pipeline-based approaches have the potential to parallelize communication and computation, which helps reduce inference latency. However, the benefit diminishes when the inference request at the network edge is sparse, where pipeline is typically at low utilization. To enable efficient distributed LLM inference at the edge, we propose \textbackslash textbf\textbraceleft FlowSpec\textbraceright, a pipeline-parallel tree-based speculative decoding framework. FlowSpec incorporates three key mechanisms to improve decoding efficiency: 1) score-based step-wise verification prioritizes more important draft tokens to bring earlier accepted tokens; 2) efficient draft management to prune invalid tokens while maintaining correct causal relationship during verification; 3) dynamic draft expansion strategies to supply high-quality speculative inputs. These techniques work in concert to enhance both pipeline utilization and speculative efficiency. We evaluate FlowSpec on a real-world testbed with other baselines. Experimental results demonstrate that our proposed framework significantly improves inference speed across diverse models and configurations, achieving speedup ratios 1.37\$\textbackslash times\$-1.73\$\textbackslash times\$ compared to baselines. Our code is publicly available at \textbackslash href\textbraceleft https://github.com/Leosang-lx/FlowSpec\#\textbraceright\textbraceleft https://github.com/Leosang-lx/FlowSpec\textbackslash\#\textbraceright.},
+  howpublished = {https://arxiv.org/abs/2507.02620v3},
+  langid = {english}
+}
+
 @misc{liuHLoRAEfficientFederated2025,
   title = {{{HLoRA}}: {{Efficient Federated Learning System}} for {{LLM Heterogeneous Fine-Tuning}}},
   shorttitle = {{{HLoRA}}},

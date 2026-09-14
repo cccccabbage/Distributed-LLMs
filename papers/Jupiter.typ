@@ -13,19 +13,17 @@ reports up to a $26.1 times$ end-to-end latency reduction over its evaluated bas
 
 === Issues Addressed
 
+@issue-pipeline-bubbles-utilization[Pipeline Bubbles and Stage Utilization in Distributed Inference]
 Jupiter instantiates @issue-inference-resource-heterogeneity[Distributed-Inference Resource
   Heterogeneity and Model Placement] on edge hardware. A single device may lack enough compute or
 memory for model parameters, activations, and the KV cache, while an equal layer split can leave a
 slower participant as the bottleneck. Its dynamic-programming planner therefore assigns a
 memory-feasible, unequal number of consecutive layers to each profiled device.
 
-The paper also targets the communication and utilization trade-off of distributed inference. Tensor
-parallelism requires frequent intra-layer synchronization, which is costly over edge links; Jupiter
-instead transfers hidden states only between adjacent pipeline stages. Ordinary pipeline
-parallelism, however, leaves later stages idle for a single request. Jupiter creates finer-grained
-work during both phases described in @background-prefill-decode-kv-cache[Prefill, Decode, and the
-  Key-Value Cache], seeking to fill this pipeline without changing the causal dependencies of prompt
-processing.
+The paper also targets the communication and utilization trade-off of distributed inference. Jupiter
+transfers hidden states only between adjacent pipeline stages and creates finer-grained work during
+both phases described in @background-prefill-decode-kv-cache[Prefill, Decode, and the Key-Value
+  Cache], seeking to fill this pipeline without changing prompt-processing causal dependencies.
 
 === Method
 

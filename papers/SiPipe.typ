@@ -15,18 +15,17 @@ transformer execution rather than by changing individual transformer kernels.
 
 === Issues Addressed
 
-In PP, consecutive model layers are divided into stages and different microbatches can move through
-those stages concurrently. In steady state, the slowest stage limits throughput. This is an
-inference-side instance of the stage bottleneck and activation-transfer concerns described in
-@issue-inference-resource-heterogeneity[Distributed-Inference Resource Heterogeneity and Model
-  Placement]. SiPipe focuses on bubbles that remain even when the model layers are otherwise evenly
-distributed.
+@issue-pipeline-bubbles-utilization[Pipeline Bubbles and Stage Utilization in Distributed Inference]
+This is an inference-side instance of the stage bottleneck and activation-transfer concerns
+described in @issue-inference-resource-heterogeneity[Distributed-Inference Resource Heterogeneity
+  and Model Placement]. SiPipe focuses on bubbles that remain even when the model layers are
+otherwise evenly distributed.
 
 The first bubble is load imbalance at the final stage. Other stages primarily run a transformer
 forward pass, while the final stage also processes logits and samples the next token. Sampling may
 include temperature scaling, repetition, frequency, and presence penalties, softmax, top-k or top-p
 filtering, and token selection. This additional work can make the last stage a bottleneck and cause
-other stages to wait.
+other stages to wait. SiPipe’s CPU Sampling addresses this paper-specific final-stage imbalance.
 
 The second bubble is an intra-stage CPU preparation gap. Before a GPU forward pass, the CPU prepares
 attention metadata, input buffers, tensor information, and other execution metadata. CUDA Graphs
@@ -39,7 +38,7 @@ The third bubble is inter-stage communication overhead. A receiver may otherwise
 deserialize it, allocate buffers, receive tensor data, and only then begin computation. Across
 decoding iterations, tensor values change but their structure, including names, shapes, dtypes, and
 devices, is usually stable. Repeating this structural exchange and allocation therefore adds a
-synchronization cost around the useful transfer.
+synchronization cost around the useful transfer. TSEM and SAT provide the paper-specific remedies.
 
 === Method
 
