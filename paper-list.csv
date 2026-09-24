@@ -27,7 +27,7 @@ Decentralized Low-Rank Fine-Tuning of Large Language Models (Dec-LoRA),https://a
 DEEPSERVE: Serverless Large Language Model Serving at Scale,https://www.usenix.org/conference/atc25/presentation/hu-junhao,Jul-25,Yes
 FedEx-LoRA: Exact Aggregation for Federated and Efficient Fine-Tuning of Large Language Models,https://aclanthology.org/2025.acl-long.67/,Jul-25,Yes
 FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference,https://arxiv.org/abs/2507.02620,Jul-25,Yes
-HALoS: Hierarchical Asynchronous Local SGD over Slow Networks for Geo-Distributed Large Language Model Training,https://proceedings.mlr.press/v267/kim25y.html,Jul-25,No
+HALoS: Hierarchical Asynchronous Local SGD over Slow Networks for Geo-Distributed Large Language Model Training,https://proceedings.mlr.press/v267/kim25y.html,Jul-25,Yes
 Idle No More: Boosting Distributed Pipeline Training via FluidPipe,https://repository.kaust.edu.sa/items/bc117621-9afd-4868-852a-19535837273e,Jul-25,No
 LoRA-A²: Towards Robust and Efficient Federated Low-Rank Adaptation with Heterogeneous Clients,https://aclanthology.org/2025.acl-long.19/,Jul-25,No
 Overcoming the Communication-Performance Tradeoff in LLM Pretraining (SparseLoCo),https://arxiv.org/abs/2508.15706,Aug-25,No

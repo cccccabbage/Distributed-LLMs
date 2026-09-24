@@ -293,6 +293,23 @@
   keywords = {Computer Graphics}
 }
 
+@misc{kimHALoSHierarchicalAsynchronous2025,
+  title = {{{HALoS}}: {{Hierarchical Asynchronous Local SGD}} over {{Slow Networks}} for {{Geo-Distributed Large Language Model Training}}},
+  shorttitle = {{{HALoS}}},
+  author = {Kim, Geon-Woo and Li, Junbo and Gandham, Shashidhar and Baldonado, Omar and Gangidi, Adithya and Balaji, Pavan and Wang, Zhangyang and Akella, Aditya},
+  year = 2025,
+  month = jun,
+  number = {arXiv:2506.04531},
+  eprint = {2506.04531},
+  primaryclass = {cs.LG},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.04531},
+  urldate = {2026-09-24},
+  abstract = {Training large language models (LLMs) increasingly relies on geographically distributed accelerators, causing prohibitive communication costs across regions and uneven utilization of heterogeneous hardware. We propose HALoS, a hierarchical asynchronous optimization framework that tackles these issues by introducing local parameter servers (LPSs) within each region and a global parameter server (GPS) that merges updates across regions. This hierarchical design minimizes expensive inter-region communication, reduces straggler effects, and leverages fast intra-region links. We provide a rigorous convergence analysis for HALoS under non-convex objectives, including theoretical guarantees on the role of hierarchical momentum in asynchronous training. Empirically, HALoS attains up to 7.5x faster convergence than synchronous baselines in geo-distributed LLM training and improves upon existing asynchronous methods by up to 2.1x. Crucially, HALoS preserves the model quality of fully synchronous SGD-matching or exceeding accuracy on standard language modeling and downstream benchmarks-while substantially lowering total training time. These results demonstrate that hierarchical, server-side update accumulation and global model merging are powerful tools for scalable, efficient training of new-era LLMs in heterogeneous, geo-distributed environments.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning}
+}
+
 @misc{kuangFederatedScopeLLMComprehensivePackage2023,
   title = {{{FederatedScope-LLM}}: {{A Comprehensive Package}} for {{Fine-tuning Large Language Models}} in {{Federated Learning}}},
   shorttitle = {{{FederatedScope-LLM}}},

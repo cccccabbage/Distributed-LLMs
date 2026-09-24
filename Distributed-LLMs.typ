@@ -65,6 +65,7 @@
 #include "papers/CrossPipe.typ"
 #include "papers/DeepServe.typ"
 #include "papers/FlowSpec.typ"
+#include "papers/HALoS.typ"
 
 = References
 
