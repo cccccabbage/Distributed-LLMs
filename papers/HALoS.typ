@@ -17,7 +17,9 @@ HALoS targets geo-distributed LLM training in which intra-region networks are fa
 between datacenters are slower, higher-latency, and coupled with unequal worker speeds. Frequent
 all-worker barriers then spend a large share of time on inter-region communication, and a slow
 worker or slow link stalls the rest. That setting is a particularly severe instance of
-@issue-communication-cost[Communication Cost and Synchronization].
+@issue-communication-cost[Communication Cost and Synchronization] and of
+@issue-communication-computation-overlap[Communication-Induced Idle Time and Computation Overlap in
+  Distributed Training].
 
 @paper-diloco[DiLoCo]-style local SGD reduces how often workers communicate by taking $H$ local
 steps, but synchronous variants still wait for every worker at each outer boundary, so stragglers

@@ -1,3 +1,17 @@
+@article{aljahdaliIdleNoMore2025,
+  title = {Idle {{No More}}: {{Boosting Distributed Pipeline Training}} via {{FluidPipe}}},
+  shorttitle = {Idle {{No More}}},
+  author = {Aljahdali, Mohammed and Canini, Marco},
+  year = 2025,
+  month = dec,
+  eprint = {10754/707393},
+  eprinttype = {hdl},
+  publisher = {IEEE},
+  urldate = {2026-09-24},
+  abstract = {Large foundation models, such as language models with billions of parameters, have become pivotal in various fields, including natural language processing, healthcare, and AI-driven applications. These models require many GPUs to train or finetune, which presents a challenge when obtaining GPUs within the same cloud datacenter or region is not viable. Moreover, organizations with limited computational resources may acquire cloud-based resources but cannot fully offload to the cloud due to privacy, legal or data sovereignty concerns.In this paper, we propose FluidPipe, a distributed parallel training algorithm that is tailored for geo-distributed resources. Our algorithm takes inspiration from Federated Group Knowledge Transfer (FedGKT), a federated learning method that splits model training between clients and the server. Our approach greatly reduces the runtime over pipeline parallelism at the cost of slightly changing the learning objective. While effective, our approach still suffers from idle times due to synchronization and data communication delays, especially in geo-distributed scenarios where latency and bandwidth issues lead to substantial idle times. To address this we incorporate idle training, that is, carefully orchestrated additional training steps during idle times enhancing resource utilization.},
+  langid = {english}
+}
+
 @misc{bianLoRAFAIRFederatedLoRA2025,
   title = {{{LoRA-FAIR}}: {{Federated LoRA Fine-Tuning}} with {{Aggregation}} and {{Initialization Refinement}}},
   shorttitle = {{{LoRA-FAIR}}},

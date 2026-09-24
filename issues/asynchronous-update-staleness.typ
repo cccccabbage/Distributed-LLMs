@@ -18,5 +18,7 @@ Methods can bound the allowed version lag, discard overly old contributions, cor
 with locally current information, or constrain update size through clipping and related stability
 measures. These measures mitigate rather than eliminate the central trade-off: reducing waits can
 increase useful parallelism, while stronger synchronization produces fresher data at the cost of
-idle time and sensitivity to slow workers. The choice should therefore report both system benefits
-and the tolerated source and degree of staleness.
+idle time and sensitivity to slow workers. The idle time that asynchronous execution avoids is
+covered in @issue-communication-computation-overlap[Communication-Induced Idle Time and Computation
+  Overlap in Distributed Training]. The choice should therefore report both system benefits and the
+tolerated source and degree of staleness.

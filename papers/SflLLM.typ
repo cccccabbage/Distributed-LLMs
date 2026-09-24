@@ -24,8 +24,9 @@ computation to the main server, while LoRA restricts training to small adapter p
 It also addresses the communication and synchronization costs described in
 @issue-communication-cost[Communication Cost and Synchronization]. In particular, synchronous
 training is limited by stragglers: clients with weak processors or poor wireless links determine the
-round duration. The paper treats the resulting maximum per-client delay as a quantity to optimize
-rather than optimizing an average client.
+round duration, an instance of @issue-communication-computation-overlap[Communication-Induced Idle
+  Time and Computation Overlap in Distributed Training]. The paper treats the resulting maximum
+per-client delay as a quantity to optimize rather than optimizing an average client.
 
 Finally, the work specializes the configuration trade-offs in @issue-resource-heterogeneity[Resource
   Heterogeneity and Configuration Adaptation] to a wireless split-learning setting. A higher LoRA

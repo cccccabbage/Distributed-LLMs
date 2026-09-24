@@ -16,5 +16,9 @@ synchronization frequency but retaining model-sized exchanges
 These choices introduce trade-offs. More local work lowers the number of communication rounds but
 can increase disagreement between participants; smaller or sparse communication topologies reduce
 per-round traffic but may spread information more slowly. The resulting optimization consequences
-are discussed in @issue-data-heterogeneity[Data Heterogeneity and Client Drift]. Communication
-efficiency also does not imply lower total compute, nor does data locality alone establish privacy.
+are discussed in @issue-data-heterogeneity[Data Heterogeneity and Client Drift]. Reducing the number
+of rounds or the size of each exchange is separate from how much of the communication can be hidden
+behind computation, however; the idle time that remains when an exchange cannot be hidden is
+discussed in @issue-communication-computation-overlap[Communication-Induced Idle Time and
+  Computation Overlap in Distributed Training]. Communication efficiency also does not imply lower
+total compute, nor does data locality alone establish privacy.

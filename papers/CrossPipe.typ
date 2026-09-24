@@ -25,17 +25,10 @@ CrossPipe targets pipeline-parallel training when adjacent stages sit in differe
 Intra-datacenter networks are typically high-bandwidth and low-latency. Inter-datacenter links have
 higher latency, lower bandwidth, larger variance, and may be shared or contended. In pipeline
 parallelism, activations move forward from stage to stage, while gradients travel backward. If two
-neighboring stages are in different datacenters, that hop can dominate the iteration.
-
-When a stage finishes its current work but the next input is still in flight, the GPU waits. That
-idle interval is a pipeline bubble. A conventional static order cannot start an independent ready
-operation during the wait, even if such work exists. CrossPipe's aim is to find reorderings that
-occupy those gaps.
-
-A delay is not local to one operation. Pipeline work has dependencies across stages and
-microbatches, so a late activation or gradient can stall later operations and other stages. Reducing
-communication time alone is therefore insufficient; the relevant objective is to minimize the
-completion time of the full dependency graph.
+neighboring stages are in different datacenters, that hop can dominate the iteration. These idle
+periods and the general techniques for hiding them are described in
+@issue-communication-computation-overlap[Communication-Induced Idle Time and Computation Overlap in
+  Distributed Training].
 
 Existing schedules such as 1F1B, interleaved 1F1B, and Zero-Bubble pipelines define a largely
 predetermined execution order. They work well when communication is cheap and predictable, but they

@@ -32,6 +32,7 @@
 #include "issues/privacy-leakage.typ"
 #include "issues/untrusted-permissionless-compute.typ"
 #include "issues/asynchronous-update-staleness.typ"
+#include "issues/communication-computation-overlap.typ"
 #include "issues/lora-aggregation-mismatch.typ"
 
 = Papers
@@ -66,6 +67,7 @@
 #include "papers/DeepServe.typ"
 #include "papers/FlowSpec.typ"
 #include "papers/HALoS.typ"
+#include "papers/FluidPipe.typ"
 
 = References
 

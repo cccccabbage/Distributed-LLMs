@@ -14,12 +14,14 @@ low-bandwidth settings, while avoiding most of the communication wait
 === Issues Addressed
 
 The paper addresses the residual synchronization latency in low-communication distributed training,
-an instance of @issue-communication-cost[Communication Cost and Synchronization], and the resulting
-trade-off in @issue-asynchronous-update-staleness[Asynchronous Update Staleness]. In standard
-DiLoCo, a worker must finish a local block, exchange outer gradients, wait for the aggregate, and
-only then begin the following block. This leaves accelerators idle when cross-datacenter
-communication is slow. Eager Updates specifically seeks to hide that outer-update communication
-while limiting the quality loss from delayed remote contributions.
+an instance of @issue-communication-cost[Communication Cost and Synchronization] and, more
+specifically, of @issue-communication-computation-overlap[Communication-Induced Idle Time and
+  Computation Overlap in Distributed Training], together with the resulting trade-off in
+@issue-asynchronous-update-staleness[Asynchronous Update Staleness]. In standard DiLoCo, the outer
+update is a blocking point: a worker must finish a local block, exchange outer gradients, wait for
+the aggregate, and only then begin the following block, which leaves accelerators idle when
+cross-datacenter communication is slow. Eager Updates specifically seeks to hide that outer-update
+communication while limiting the quality loss from delayed remote contributions.
 
 === Method
 
